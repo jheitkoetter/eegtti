@@ -1,0 +1,230 @@
+@c
+@c PRESERVING AND PROMOTING THE ''INTERNET CULTURE''
+@c     Copyright (c) 1993 by Peter Deutsch. All rights reserved.
+@c  
+@c     $Id: peter.texi,v 2.3 1994/08/14 13:25:07 joke Rel $
+@c
+
+@c --------
+@c Up node is: Preserving and Promoting the ``Internet Culture''
+@menu
+* Internet Culture::
+@end menu
+
+@c --------
+By @emph{Peter Deutsch}
+@footnote{@i{Copyright @copyright{} 1993 by Peter Deutsch,
+Bunyip Information Systems Inc.
+All rights reserved.}}
+@email{peterd@@bunyip.com}@*
+(Reprinted from ``Internet World'' (March 1994), with kind permission of
+the author.)
+@cindex Deutsch, Peter
+
+There's something special about the Internet. Anyone with even a passing
+exposure to this eighth wonder of the world will vouch for the accuracy of this
+claim, but explaining exactly what the fuss is all about to someone who has not
+yet experienced its delights first hand can be a real challenge. 
+
+Now, we can be sure it's not the nifty technology. The fact is, although there
+@emph{is} a certain sense of magic in logging onto a machine in another country for
+the first time there are other technologies that offer a similar sense of wonder
+or power. Besides, the majority of Internet users don't really care what all
+those acronyms stand for. At this point, even the majority of us involved in
+creating the stuff would probably admit that in our hearts we know that this is
+just the glue that holds everything together. The real excitement lies
+elsewhere. 
+
+Nor is the magic to be found in the mountains of information that the Internet
+makes available to its users. Let's face it, despite the fact that there is
+quite a lot of useful stuff out there, in reality the ``Information Age'' promise
+of the Internet is still more potential than reality. At this point, content is
+best measured in quantity, not quality. 
+
+No, if there is one thing that seems to captivate people more than anything else
+from the moment they first make contact with the Internet, it is that
+inexplicable sense of civic pride and community spirit that bonds each of us to
+every other user on the net. When you find another Internaut at a traditional
+social function and end up swapping email addresses, you're affirming your
+membership in a group with its own rituals, rites and secret handshakes. You're
+affirming your membership in a semi-secret society that appears to be well on
+the way to changing the world. 
+
+It seems to me that ``knowing the secret Internet handshake'' is the real thrill
+here. It leads to a form of communal bonding that makes swapping email addresses
+the cyberspace equivalent of inviting someone into your house for dinner. This
+sharing of your secret name is an act of faith, a demonstration that your
+new-found friend can be trusted to fit in with your current set of friends and
+neighbors, that a newcomer has in fact shown that they know the secret handshake
+and are worthy of your acceptance and support. 
+
+Part of this sense of community is probably fueled by our simple but compelling
+need for help if we are to survive those lonely nights in the Internet
+wilderness, for the Internet is still a land where user interfaces are ``red in
+tooth and claw'' and loners don't last long. Without a guiding hand in those
+early stages few of us would have avoided fairly prompt Darwinian selection and
+thus there's lots of incentive to learn to ``play nicely with the other kids'' if
+you really want to get any work done. 
+
+But there's more to it than that. This sense of community is surely sustained by
+the ease with which such help is sought and given. Most users readily admit that
+they need the extra eyes and ears of their ``extended family'' to bring them news
+of new offerings and found treasures. Newcomers seem to rapidly and naturally
+find the appropriate mailing lists, newsgroups, archives or gopher servers that
+cater to their own particular needs and in the process they cluster together
+with others who share similar interests in various ``virtual villages''. That's
+where the real excitment of the Internet is to be found, in joining and building
+the cyberspace frontier. 
+
+I've been incredibly fortunate over the past couple of years to be able to
+travel and meet Internet users from around the world. In the process, I've been
+amazed at how similar we are all under the skin. 
+
+Here's just a sampling of some of the interesting people I share my net with: 
+
+@quotation
+   Naswa, an Arab woman responsible for the first Internet link into her
+   country, who once told me tales of pulling cable under false floors in the
+   middle of the night and eating sandwiches over the terminal while struggling
+   to get the routing tables in place before the first users showed up for work
+   in the morning. It turns out we'd shared exactly the same experiences in
+   bringing the Internet into our respective institutions. 
+   Daniel, a Frenchman who gave up a lucrative job at IBM to help bring
+   networking into the Caribbean. He told me tales of his efforts to develop
+   email software that could function across the region's atrocious phone links
+   while also providing its user help facility in four languages. The package is
+   made available by aid workers and given away at development conferences. 
+   Anders, a psychologist turned gopher expert in Scandinavia who works to bring
+   together the librarians and computer operations people while never forgetting
+   that we're really supposed to be doing all of this for the users. With a
+   background far removed from the arcane world of computing, Anders is able to
+   constantly remind me that technology is not the point, only a point of
+   departure. 
+@end quotation
+
+What appears to tie together this disparate group of connectivity providers,
+developers, operators and users is the shared conviction that we're all working
+on something important. Although as far as I know none of these people have
+actually met, I'm sure that if brought together they'd all recognize each other
+instantly. I certainly felt a kinship when I met each one of them in my travels.
+It was clear that we are all from the same small village and it was nice to come
+home. 
+
+I can't help but see this spontaneous creation of online communities as a
+natural response to those cold winter nights, when the new version of Mosaic
+refuses to install and the howling of distant UNIX hackers can be heard far off
+across the tundra. 
+
+But there is also the shared joy of a communal feast, held perhaps after the
+virtual community's hunters have subdued a fat new gopher server for the group
+to enjoy. After a brief struggle to isolate its port number and bring it to its
+knees with multiple queries, the information monster is conquered once again and
+there is joyous feasting around the campfires as we all gorge ourselves on this
+latest net offering and bask in the warm glow of communal friendship. 
+
+If you (and my editor) will forgive me this brief flight of literary fantasy, I
+think there is actually a point in here somewhere. If you are ever called upon
+to explain the magic of the Internet to those who have yet to learn the secret
+handshake (whether it be a recalcitrant boss or a puzzled life partner) then I'd
+definitely forgo the tutorial on TCP/IP's ability to survive a nuclear war or
+the rapturous recitation of the list of anonymous FTP servers currently carrying
+XMosaic. What really matters here is that people help each other out, they do it
+with warmth and friendship, there's a great feeling of communal spirit and
+everything seems to work, more or less. 
+
+Although as a newcomer to the Internet you might sometimes feel like you've
+wandered onto a construction site, what with all the half-finished software and
+the half-baked and incomplete services you're confronted with on a daily basis,
+the happy campers living here have somehow managed to make the place livable and
+welcome you into their little world with open arms, asking only that you learn
+the rules, do your share of the housework and don't trample on the flowerbeds.
+It's not a bad life, really. 
+
+And the Internet does tend to take care of its own. Whenever someone announces a
+new service people look it over and run it through their collective ``cultural
+filter''. Woe betide those who would bring forth a new service that doesn't
+appear to respect the cultural norms or provide for the required nod towards
+altruism or shared sacrifice. If your nifty new plan to make a million off the
+Internet doesn't seem to have at least some small component of sharing as part
+of its mandate, then you risk a flood of email, angry Usenet postings and maybe
+even, if the crowd is angry enough, actual phone calls of complaint. 
+
+Of course, this is not to say that we're facing the dawning of the Age of
+Aquarius (if I may be permitted to date myself just a bit). In fact, numerous
+large commercial entities have come to play in the Internet sandbox, with many
+more coming online every day. This raises real questions about whether we're
+going to be able to preserve the potlatch culture in this new age of Mammon.
+I've even seen postings which refer to the current Internet culture as a
+``hothouse flower'', as if it is something precious yet fragile that must be
+preserved against the interlopers who would do it harm. 
+
+For what it's worth, I firmly believe that the current Internet culture is
+actually far tougher than it appears at first glance. In some measure I think
+this is due to fact that our need for help when getting started leads us
+naturally to cooperation as a form of enlightened self-interest. But I also
+think this is true because cooperation has so obviously worked to date that its
+benefits quickly makes a convert out of each new-comer who shows up. 
+
+I hope I'm right about this, since if the new commercialism does fulfill its
+promise and actually provide us with better quality interfaces and sources of
+information it would appear to lessen that driving need for help which I think
+helps bind us all together. If new-comers can avoid the painful rites of passage
+will they still be as cooperative with their neighbors? Will it be the same
+Internet when we don't all share the same scars under our clothes and tell the
+same horrors stories to our children? I hope so. 
+
+Of course, for those worrying about a flood of nouveau riche Internet
+entrepreneurs carrying off the tribe's birthright there's still some time yet
+before we all have to pack up and head off into the sunset. I don't yet see lots
+of millionaires pulling up to the IETF in big cars (although the flood of
+well-dressed sales people at Interop is starting to become a bit intimidating to
+those of us whose primary sartorial decision-making revolve around the choice
+between dark or light T-shirts each morning). 
+
+In fact, as one of the principals in a small startup, I report with somewhat
+mixed feelings that a slightly bemused venture capitalist once said to me not
+too long ago ``I see lots of money changing hands around the Internet, I just
+don't see anybody making lots of money''. Of course, he was only looking at
+connectivity, since there's not many other places yet where the money is moving
+in quantity. 
+
+In any event, I suspect that this lack of real ``get rich quick'' success stories
+is helping to keep some of the more onerous fast buck artists out of town. This
+is just as well, since probably the last thing we need right now is for some
+Internet prospector to come down out of the hills waving around a couple of
+fist-sized nuggets, shouting ``Gold!''. We still need a bit of time to get the
+sidewalks in before that particular rush begins. 
+
+Of course, if you're not quite as complacent as I am you want to help out on
+picket duty while the rest of us are sleeping. Here are a few things you might
+want to keep an eye out for in the next little while. 
+
+@quotation
+   When we start to see people really shutting down the volunteer services
+   because of exploding demand, it might be time to start worrying (but the mere
+   sighting of a posting which predicts their demise doesn't count. I've been
+   seeing those for years). 
+   When we start to see newly arrived commercial services flaunt local customs
+   and get away with it, it might be time to start worrying (For example, if a
+   commercial site were to send out a pile of unsolicited email for their wares,
+   and nobody bothers to flame them, then I'd be nervous). 
+   Most importantly, if you suddenly found yourself signing off the Internet
+   early one day just so you can go find something just a bit more interesting
+   to do, then I think it would be time to really start wondering where we all
+   went wrong! 
+@end quotation
+
+So, can the Internet culture survive? I don't know. I do know that it has proved
+a remarkably hardy creature so far. I trust that with just a little bit of care
+and feeding it can carry on for a good while yet. If each Internet traveller who
+meets it on the road will do their bit to keep it going for a while longer we
+can perhaps enjoy its presence for a good while to come. 
+
+@sp 1
+
+@flushright
+Peter Deutsch
+@email{peterd@@bunyip.com}
+Bunyip Information Systems Inc. 
+@end flushright
+@cindex Deutsch, Peter

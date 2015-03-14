@@ -1,0 +1,122 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: preface.texi,v 2.3 1994/08/14 13:25:08 joke Rel $
+@c
+
+@c --------
+@c Upper node: Preface
+
+By @emph{Adam Gaffin} @email{adamg@@world.std.com}@*
+Senior Writer, Network World, Framingham, Mass.
+@c Senior Reporter, Middlesex News, Framingham, Mass.
+
+Welcome to the Internet! You're about to start a journey through a 
+unique land without frontiers, a place that is everywhere at once -- even 
+though it exists physically only as a series of electrical impulses.  
+You'll be joining a growing community of millions of people around the 
+world who use this global resource on a daily basis.
+
+With this book, you will be able to use the Internet to:
+@cindex Cyberspace
+@cindex Global village
+@cindex The Net
+
+@itemize @bullet
+@item
+Stay in touch with friends, relatives and colleagues around the
+world, at a fraction of the cost of phone calls or even air
+mail.
+
+@item
+Discuss everything from archaeology to zoology with people in 
+several different languages.    
+
+@item
+Tap into thousands of information databases and libraries 
+worldwide.
+
+@item
+Retrieve any of thousands of documents, journals, books and
+computer programs.
+
+@item
+Stay up to date with wire-service news and sports and 
+with official weather reports.
+
+@item
+Play live, ``real time'' games with dozens of other people at once.
+@end itemize
+
+And you will have become the newest member of this ever growing
+community. If you stay and contribute, the Net will be richer for it --
+and so will you.
+
+But it will take a sense of adventure, a willingness to learn and
+an ability to take a deep breath every once in awhile.
+
+Connecting to ``the Net'' today, takes something of a sense of 
+adventure, a willingness to learn and an ability to take a deep breath 
+every once in awhile. Visiting the Net today is a lot like journeying to 
+a foreign country.  There are so many things to see and do, but 
+everything at first will seem so, well, foreign.  
+
+When you first arrive, you won't be able to read the street signs.
+You'll get lost.  If you're unlucky, you may even run into some locals
+who'd just as soon you went back to where you came from.  If this
+weren't enough, the entire country is constantly under construction;
+every day, it seems like there's something new for you to figure out.
+
+Fortunately, most of the locals are actually friendly.  In fact, the 
+Net actually has a rich tradition of helping out visitors and newcomers.  
+Until very recently, there were few written guides for ordinary people, 
+and the Net grew largely through an ``oral'' tradition in which the
+old-timers helped the newcomers.
+
+Here's where you take a deep breath.  Fortunately, most of the
+natives are actually friendly.  In fact, the Net actually has a rich
+tradition of helping out visitors and newcomers.  With few written
+guides for ordinary people, the Net has grown in large part one person
+at a time -- if somebody helps you learn your way around, it's almost
+expected you'll repay the favor some day by helping somebody else.
+
+So when you connect, don't be afraid to ask for help.  You'll be
+surprised at how many people will lend a hand!
+
+Without such folks, in fact, this guide would not be possible. My 
+thanks to all the people who have written with suggestion, additions and 
+corrections since the Big Dummy's Guide first appeared on the Internet in 
+1993.
+
+Special thanks go to the following people, who, whether they know it 
+or not, provided particular help -- and to my loving wife Nancy:
+
+Rhonda Chapman, Jim Cocks, Tom Czarnik, Christopher Davis, David 
+DeSimone, Jeanne deVoto, Phil Eschallier, Nico Garcia, Jon Granrose, 
+Joerg Heitkoetter, Joe Ilacqua, Jonathan Kamens, Peter Kaminski, Thomas 
+A. Kreeger, Stanton McCandlish, Leanne Phillips, Nancy Reynolds, Helen 
+Trillian Rose, Barry Shein, Jennifer ``Moira'' Smith, Gerard van der Leun 
+and Scott Yanoff. 
+
+If you have any suggestions or comments on how to make this guide 
+better, I'd love to hear them.  You can reach me via e-mail at 
+@email{adamg@@world.std.com}. 
+ 
+Boston, Mass., January, 1994.
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+``Stop the murder!
+Support dolphin-free networking.''
+--- @b{Brendan Kehoe's .signature}
+
+``On the Internet, no one knows you're a dog.''
+--- @b{Adam's favorite one.}
+@end flushright

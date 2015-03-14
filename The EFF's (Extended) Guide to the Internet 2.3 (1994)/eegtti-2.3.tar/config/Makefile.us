@@ -1,0 +1,231 @@
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+#  
+#  EFF's (Extended) Guide to the Internet by Adam Gaffin with Joerg Heitkoetter
+#  
+#    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+#  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+#  
+#     $Id: Makefile,v 2.3 1994/08/14 13:24:39 joke Rel $
+#
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+DUMMY		= eegtti
+PCDUMMY		= eeg
+
+VERS		= 2.3
+PAPER		= letter
+
+TEXINFO		= $(DUMMY).texi
+
+INFOFILE	= $(DUMMY)-$(VERS).info
+DVIFILE 	= $(DUMMY)-$(VERS).dvi
+PSFILE		= $(DUMMY)-$(VERS).ps
+SHARFILE	= $(DUMMY)-$(VERS).shar
+TARFILE		= $(DUMMY)-$(VERS).tar
+TXTFILE		= $(DUMMY)-$(VERS).txt
+
+USDVIFILE 	= $(DUMMY)-$(VERS)-US.dvi
+USPSFILE	= $(DUMMY)-$(VERS)-US.ps
+
+FAQVERS		= 13
+FAQFILE		= $(DUMMY)-$(FAQVERS).faq
+
+HTMLINTRO	= $(DUMMY).html
+HTMLTAR 	= $(DUMMY)-$(VERS).html.tar
+
+HTMLTEXI	= $(PCDUMMY).texi
+HTMLFILES	= $(PCDUMMY)_[0-9]*.html
+HTMLFOOT	= $(PCDUMMY)_foot.html
+HTMLTOC		= $(PCDUMMY)_toc.html
+
+DISTDIR		= extended-guide
+
+BLURB		=	\
+	COPYLITE	\
+	CREDITS		\
+	FAQINTRO	\
+	HOWTO		\
+	POLICY		\
+	README		\
+	README.EFF	\
+	EFF.EFF		\
+	README.VMS	\
+	README.WWW	\
+	SERVERS		\
+	VERSIONS	\
+	WHATZIT		\
+	WELCOME
+
+PARTS		=	\
+	policy.texi	\
+	gday.texi	\
+	welcome.texi	\
+	foreword.texi	\
+	nyt.texi	\
+	preface.texi	\
+	chap01.texi	\
+	chap02.texi	\
+	chap03.texi	\
+	chap04.texi	\
+	chap05.texi	\
+	chap06.texi	\
+	chap07.texi	\
+	chap08.texi	\
+	chap09.texi	\
+	chap10.texi	\
+	chap11.texi	\
+	chap12.texi	\
+	chap13.texi	\
+	adam.texi
+
+PARTS2		=	\
+	howard.texi	\
+	bruce.texi	\
+	peter.texi	\
+	time.texi	\
+	nren.texi	\
+	lingo.texi	\
+	smileys.texi	\
+	emily.texi	\
+	eff.texi	\
+	isocodes.texi	\
+	connect.texi	\
+	eunet.texi	\
+	freetext.texi	\
+	paper.texi	\
+	specials.texi	\
+	rfc1392.texi	\
+	rfc1436.texi
+
+XPARTS		=	\
+	texi2dvi	\
+	texi2html	\
+	texi2html.ext	\
+	invisible.xbm	\
+	texinfo.tex	\
+	fonts/*
+
+CONFIGS		=	\
+	config/Makefile.a4	\
+	config/Makefile.us	\
+	config/eegtti.a4	\
+	config/eegtti.us	\
+	configure
+
+PATCHES		= 	\
+	patches/makeinfo-1.55.patch	\
+	patchN2WWW
+
+PEOPLE 		=	\
+	people/*
+
+REPOSITORIES	=	\
+	maps/*
+
+LOGOS 		=	\
+	logos/*
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+COMPRESS	= gzip -9 -v
+ZSUFF		= gz
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+default:dvi
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+all:	ps info txt html
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ps:	dvi
+	dvips -r0 -t$(PAPER) -o $(PSFILE) $(DVIFILE)
+
+dvi:	clean
+	./texi2dvi $(TEXINFO)
+	./texi2dvi $(TEXINFO)
+	mv $(DUMMY).dvi $(DVIFILE)
+
+txt:	clean
+	makeinfo --verbose --no-split --fill-column 78 --no-headers \
+$(TEXINFO) --output $(TXTFILE)
+
+info:	clean
+	makeinfo --verbose --no-split $(TEXINFO) --output $(INFOFILE)
+
+html:
+	cp $(TEXINFO) $(HTMLTEXI)
+	./texi2html -verbose -menu -split_node $(HTMLTEXI)
+	chmod 644  $(HTMLFILES) $(HTMLFOOT) $(HTMLTOC)
+	./patchN2WWW $(HTMLFILES) $(HTMLFOOT) $(HTMLTOC)
+
+
+faq:
+	cat FAQINTRO README SERVERS VERSIONS CREDITS COPYLITE POLICY \
+EFF.EFF >$(FAQFILE)
+
+blurb:
+	tar cvf blurb.tar $(BLURB)
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+tar:	clean
+	tar cvf $(TARFILE) $(BLURB) $(PARTS) $(PARTS2) $(XPARTS) $(CONFIGS) \
+$(PATCHES) $(PEOPLE) $(REPOSITORIES) $(LOGOS)
+	$(COMPRESS) $(TARFILE)
+
+html-tar: html
+	tar cvf $(HTMLTAR) $(BLURB) $(HTMLINTRO) $(HTMLFILES) $(HTMLFOOT) $(HTMLTOC) \
+$(PEOPLE) $(REPOSITORIES) $(LOGOS) $(PATCHES)
+	$(COMPRESS) $(HTMLTAR)
+
+dist:	ps info txt tar html-tar faq
+	$(RM) -r $(DISTDIR)
+	mkdir $(DISTDIR)
+	cp $(FAQFILE) $(DISTDIR)/README
+	cp README.VMS $(DISTDIR)
+	mv $(TARFILE).$(ZSUFF) $(DISTDIR)
+	mv $(HTMLTAR).$(ZSUFF) $(DISTDIR)
+	$(COMPRESS) $(DVIFILE)
+	mv $(DVIFILE).$(ZSUFF) $(DISTDIR)
+	$(COMPRESS) $(PSFILE)
+	mv $(PSFILE).$(ZSUFF) $(DISTDIR)
+	$(COMPRESS) $(TXTFILE)
+	mv $(TXTFILE).$(ZSUFF) $(DISTDIR)
+	$(COMPRESS) $(INFOFILE)
+	mv $(INFOFILE).$(ZSUFF) $(DISTDIR)
+	configure --letter
+	( make ps )
+	$(COMPRESS) $(DVIFILE)
+	mv $(DVIFILE).$(ZSUFF) $(DISTDIR)/$(USDVIFILE).$(ZSUFF)
+	$(COMPRESS) $(PSFILE)
+	mv $(PSFILE).$(ZSUFF) $(DISTDIR)/$(USPSFILE).$(ZSUFF)
+	configure --a4
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+shar:
+	shar -c -n "$(DUMMY)-$(VERS)" -a -M \
+		-s joke@Germany.EU.net \
+		-f -L50 -d "-joke" -o "$(SHARFILE)" \
+		$(DISTDIR)
+
+ftp:
+	tar cvf $(DISTDIR)-$(VERS).tar $(DISTDIR)
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Yes, friends: parts of DUMMY's have been edited on an ancient Atari 1040STF
+disk:
+	mcopy -t -n Makefile bdgtti.texi $(BLURB) $(PARTS) a:
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+coffee:
+	@echo "...doesn't work, yet."
+
+love:
+	@echo "Not war."
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+clean:
+	$(RM) *.uue *.$(ZSUFF) *.em* *.ho* *.cp* *.fn* *.ky* *.pg* *.tp* \
+*.vr* *.lof *.lot *.log *.aux *.toc *.shar.* *.bak *.old
+
+clobber: clean
+	$(RM) $(DVIFILE) $(PSFILE) $(INFOFILE) $(TXTFILE) \
+$(HTMLFILES) $(HTMLFOOT) $(HTMLTOC) $(HTMLTEXI) $(FAQFILE) $(NEWSFILE)

@@ -1,0 +1,400 @@
+@c
+@c  Big Dummy's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c  This file is free text; you can redistribute it and/or modify
+@c     it under the terms of the GNU General Public License as published by
+@c     the Free Software Foundation; either version 2, or (at your option)
+@c     any later version.
+@c
+@c  This file is distributed in the hope that it will be useful,
+@c     but WITHOUT ANY WARRANTY; without even the implied warranty of
+@c     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+@c     GNU General Public License for more details.
+@c
+@c  You should have received a copy of the GNU General Public License
+@c     along with this file; if not, write to the Free Software
+@c     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+@c
+@c     $Id: foreword.texi,v 2.3 1994/08/14 13:25:00 joke Rel $
+@c
+
+By @emph{Mitchell Kapor} @email{mkapor@@eff.org}@*
+Co-founder, Electronic Frontier Foundation.
+@cindex Kapor, Mitchell
+
+New communities are being built today.  You cannot see them, except
+on a computer screen.  You cannot visit them, except through your
+keyboard.  Their highways are wires and optical fibers; their language a
+series of ones and zeroes.
+
+Yet these communities of cyberspace are as real and vibrant as any
+you could find on a globe or in an atlas.  Those are real people on the
+other sides of those monitors.  And freed from physical limitations,
+these people are developing new types of cohesive and effective
+communities - ones which are defined more by common interest and purpose
+than by an accident of geography, ones on which what really counts is
+what you say and think and feel, not how you look or talk or how old
+you are.
+@cindex Cyberspace
+
+The oldest of these communities is that of the scientists, which
+actually predates computers.  Scientists have long seen themselves
+as an international community, where ideas were more important than
+national origin.  It is not surprising that the scientists were the
+first to adopt the new electronic media as their principal means of
+day-to-day communication.
+@cindex Communication, day-to-day
+
+I look forward to a day in which everybody, not just scientists,
+can enjoy similar benefits of a global community.
+@cindex Global community
+
+But how exactly does community grow out of a computer network? It
+does so because the network enables new forms of communication.
+
+The most obvious example of these new digital communications media
+is electronic mail, but there are many others.  We should begin to think
+of mailing lists, newsgroups, file and document archives, etc. as just
+the first generation of new forms of information and communications
+media.  The digital media of computer networks, by virtue of their
+design and the enabling technology upon which they ride, are
+fundamentally different from the now dominant mass media of television, 
+radio, newspapers and magazines.  Digital communications media are
+inherently capable of being more interactive, more participatory, more
+egalitarian, more decentralized, and less hierarchical.
+
+As such, the types of social relations and communities which can be
+built on these media share these characteristics.  Computer networks
+encourage the active participation of individuals rather than the
+passive non-participation induced by television narcosis.
+
+In mass media, the vast majority of participants are passive
+recipients of information.  In digital communications media, the vast
+majority of participants are active creators of information as well as
+recipients.  This type of symmetry has previously only been found in
+media like the telephone.  But while the telephone is almost entirely a
+medium for private one-to-one communication, computer network
+applications such as electronic mailing lists, conferences, and bulletin
+boards, serve as a medium of group or ``many-to-many'' communication.
+@cindex Communication, one-to-one
+@cindex Communication, many-to-many
+
+The new forums atop computer networks are the great levelers and
+reducers of organizational hierarchy.  Each user has, at least in
+theory, access to every other user, and an equal chance to be heard.
+Some U.S. high-tech companies, such as Microsoft and Borland, already
+use this to good advantage: their CEO's -- @var{Bill Gates} and
+@var{Philippe Kahn}
+-- are directly accessible to all employees via electronic mail.  This
+creates a sense that the voice of the individual employee really
+matters.  More generally, when corporate communication is facilitated by
+electronic mail, decision-making processes can be far more inclusive and
+participatory.
+@cindex Gates, Bill
+@cindex Kahn, Philippe
+@cindex CEO
+@cindex Microsoft, Corp.
+@cindex Borland International, Inc.
+
+Computer networks do not require tightly centralized administrative
+control.  In fact, decentralization is necessary to enable rapid growth
+of the network itself.  Tight controls strangle growth.  This
+decentralization promotes inclusiveness, for it lowers barriers to entry
+for new parties wishing to join the network.
+
+Given these characteristics, networks hold tremendous potential to
+enrich our collective cultural, political, and social lives and enhance
+democratic values everywhere.
+
+And the Internet, and the UUCP and related networks connected to
+it, represents an outstanding example of a computer network with these
+qualities.  It is an open network of networks, not a single unitary
+network, but an ensemble of interconnected systems which operate on the 
+basis of multiple implementations of accepted, non-proprietary
+protocols, standards and interfaces.
+
+One of its important characteristics is that new networks, host
+systems, and users may readily join the network -- the network is open
+to all.
+
+The openness (in all senses) of the Internet reflects, I believe,
+the sensibilities and values of its architects.  Had the Internet
+somehow been developed outside the world of research and education, it's
+less likely to have had such an open architecture.  Future generations
+will be indebted to this community for the wisdom of building these
+types of open systems.
+
+Still, the fundamental qualities of the Net, such as its
+decentralization, also pose problems.  How can full connectivity be 
+maintained in the face of an ever-expanding number of connected
+networks, for example?  What of software bugs that bring down computers,
+or human crackers who try to do the same?  But these problems can and
+will be solved.
+@cindex The Net
+@cindex Crackers
+
+Digital media can be the basis of new forms of political discourse,
+in which citizens form and express their views on the important public
+issues of the day. There is more than one possible vision of such
+electronic democracy, however. Let's look at some examples of the
+potential power, and problems, of the new digital media.
+
+The idea of something called an ``electronic town meeting''  received
+considerable attention in 1992 with @var{Ross Perot}'s presidential campaign
+(or, at least, its first incarnation).
+@cindex Perot, Ross
+
+Perot's original vision, from 20 or so years ago,  was that viewers
+would watch a debate on television and fill out punch cards which would
+be mailed in and collated.  Now we could do it with 800 telephone
+numbers.
+
+In the current atmosphere of disaffection, alienation and cynicism,
+anything that promotes greater citizen involvement seems a good idea.
+People are turned off by politicians in general -- witness the original
+surge of support for Perot as outsider who would go in and clean up the
+mess -- and the idea of going right to the people is appealing,
+
+What's wrong with this picture? The individual viewer is a passive
+recipient of the views of experts.  The only action taken by the citizen
+is in expressing a preference for one of three pre-constructed
+alternatives.  While this might be occasionally useful, it's
+unsophisticated and falls far short of the real potential of electronic
+democracy. We've been reduced to forming our judgments on the basis of
+mass media's portrayal of the personality and character of the
+candidates.
+
+All this is in contrast to robust political debates already found
+on various on-line computer systems, from CompuServe to Usenet.
+Through these new media, the issues of the day, ranging from national
+security in the post-Cold War era to comparative national health care
+systems, are fiercely discussed in a wide variety of bulletin boards,
+conferences, and newsgroups.
+
+What I see in online debate are multiple active participants, not
+just experts, representing every point of view, in discussions that
+unfold over extended periods of time. What this shows is that, far from
+being alienated and disaffected from the political process, people like
+to talk and discuss -- and take action -- if they have the opportunity
+to do so.  Mass media don't permit that.  But these new media are more
+akin to a gathering around the cracker barrel at the general store --
+only extended over hundreds, thousands of miles, in cyberspace, rather
+than in one physical location.
+
+Recent years have shown the potential power of these new media.
+We have also seen several examples of where talk translated into 
+action.
+
+In 1987, the Federal Communications Commission proposed changing
+the way certain online providers paid for access to local phone service.
+Online, this quickly became known as the ``modem tax'' and generated a
+storm of protest.  The FCC withdrew the idea, but not quickly enough:
+the ``modem tax'' has penetrated so deeply into the crevices of the Net
+that it has taken up a permanent and ghostly residence as a kind of
+virtual or cognitive virus, which periodically causes a re-infection of
+the systems and its users.  FCC commissioners continue to receive
+substantial mail on this even though the original issue is long dead; in
+fact, it has generated more mail than any other issue in the history of
+the FCC.
+@cindex FCC
+@cindex Federal Communications Commission
+@cindex Modem, tax
+
+More recently, @var{Jim Manzi}, chairman of Lotus Development Corp.,
+received more than 30,000 e-mail messages when the company was getting
+ready to sell a database containing records on tens of millions of
+Americans.  The flood of electronic complaints about the threat to
+privacy helped force the company to abandon the project.
+Issues of narrow but vital interest to the online community give a hint
+of the organizing power of the Net.
+@cindex Manzi, Jim
+@cindex Lotus Development Corp.
+
+In August, 1991, the managers of a Soviet computer network known as
+Relcom stayed online during an abortive coup, relaying eyewitness
+accounts and news of actions against the coup to the West and to the
+rest of Russia.
+@cindex Relcom
+@cindex Soviet Computer Network
+
+And many public interest non-profit organizations and special
+interest groups already use bulletin boards heavily as a means of
+communicating among their members and organizing political activity.
+
+But all is not perfect online.  The quality of discourse is often
+very low.  Discussion is often trivial and boring and bereft of
+persuasive reason.  Discourse often sinks to the level of ``flaming,'' of
+personal attacks, instead of substantive discussion.  Flaming. Those
+with the most time to spend often wind up dominating the debate -- a
+triumph of quantity of time available over quality of content.
+
+It seems like no place for serious discussion. Information overload
+is also a problem.  There is simply far too much to read to keep up
+with.  It is all without organization.  How can this be addressed?
+
+Recent innovations in the design of software used to connect
+people to the Net and the process of online discussion itself reveal
+some hope.
+
+Flaming is universal, but different systems handle it in different
+ways.  Both the technology and cultural norms matter.
+@cindex Flame
+
+On Usenet, for instance, most news reader applications support a
+feature known as a ``killfile,'' which allows an individual to screen
+out postings by a particular user or on a particular subject.  It is
+also sometimes referred to as ``the bozo filter.''  This spares the user
+who is sufficiently sophisticated from further flamage, but it does
+nothing to stop the problem at its source.
+
+Censorship would be one solution. But what else can be done without
+resorting to unacceptably heavy-handed tactics of censorship?  There is a
+great tradition of respect for free speech on these systems, and to
+censor public postings or even ban a poster for annoying or offensive
+content is properly seen as unacceptable, in my opinion.
+
+Some systems use cultural norms, rather than software, to deal with
+flame wars.  These online communities have developed practices which
+rely more on a shared, internalized sense of appropriate behavior  than
+on censorship, for instance.  The WELL (Whole Earth 'Lectronic Link) is a
+@cindex WELL
+relatively small online conferencing system based in the San Francisco
+Bay area.  On the WELL, individuals who get into a fight are encouraged
+to move the discussion out of the public conference and into e-mail.
+The encouragement is provided not only by the host of the conference,
+but also by the users.  It is part of the culture, not part of the
+technology.
+
+WELL hosts are volunteers who facilitate the discussion of a
+particular subject.  While they have the power to censor individual
+postings, the power is very rarely used and only as a last resort, as it
+has been found that dispute resolution by talking it out among the
+parties is a superior method of problem solving in the long run.
+
+It is not an accident that the WELL has a uniquely high quality
+of conversation.  Nor is it coincidental that it developed as a small
+and originally isolated community (now on the Net) which gave it a
+chance to develop its own norms or that key management of the system
+came from ``The Farm,'' a large, successful commune of the 1960's and
+1970's led by @var{Stephen Gaskin}.
+@cindex Gaskin, Stephen
+@cindex The Farm
+
+We still know very little about the facilitation of online
+conversations.  It is a subject well worth further formal study and
+experimentation.
+
+Some problems have to do with the unrefined and immature format and
+structure of the discussion medium itself.  The undifferentiated stream
+of new messages marching along in 80 columns of ASCII text creates a
+kind of hypnotic trance.  Compare this with the typical multiplicity of
+type fonts, varied layouts, images, and pictures of the printed page.
+
+New media take time to develop and to be shaped.  Reading text on a
+terminal reminds me of looking at the Gutenberg Bible. The modern book
+took a century to develop after the invention of printing with movable
+type and the first Western printed books.  @var{Aldus Manutius} and the
+inventions of modern typefaces, pagination, the table of contents, the
+index, all of which gave the book its modern form, came later, were done
+by different people, and were of a different order than the invention of
+printing with movable type itself.  The new electronic media are
+undergoing a similar evolution.
+@cindex Gutenberg's Bible
+@cindex Manutius, Aldus
+
+Key inventions are occurring slowly, for example, development of
+software tools that will allow the dissemination of audio and video
+across the Net. This type of software has usually been done so far by
+volunteers who have given away the results.  It's a great thing, but
+it's not sufficient, given how hard it is to develop robust software.
+Innovation in the application space will also be driven by entrepreneurs
+and independent software vendors at such point as they perceive a
+business opportunity to create such products (it would be nice if
+creators did it for art's sake but this seems unlikely).
+
+There are some requirements to provide incentives to attract
+additional software development.  This requires a competitive free
+market in network services at all levels to serve the expanding user
+demand for network services. It requires a technologically mature
+network able to support these services.
+
+And there must be a user population, current or prospective,
+interested in paying for better applications -- and not just the current
+base of technically sophisticated users and students, though they will
+absolutely benefit.
+
+There are multiple classes of new application opportunities.  E-mail
+is overloaded because there aren't readily available alternatives yet.
+New and different kinds of tools are needed for collaborative work.
+Computer conferencing, as it evolves, may be sufficient for discussion
+and debate.  But by itself, it cannot really support collaborative work,
+in the sense of readily enabling a group to make decisions efficiently,
+represent and track the status of its work process.  Trying to run an
+organization via e-mail mailing list is very different than trying to 
+have a discussion.
+
+Computer networks can only fully realize their potential as
+innovative communications media in an environment which encourages free
+and open expression.
+
+In some countries, legal principles of free speech protect freedom
+of expression in traditional media such as the printed word.  But once
+communication moves to new digital media and crosses
+international borders, such legal protections fall away.  As @var{John Perry
+Barlow}, the co-founder of EFF puts it: ``In Cyberspace, the First
+Amendment is a local ordinance.''  There is no international legal
+authority which protects free expression on trans-national networks.
+Article 19 of the Universal Declaration of Human Rights calls for the
+protection of free expression in all media, but the declaration falls
+far short of being binding.
+@cindex Universal Declaration of Human Rights
+@cindex Cyberspace
+@cindex Barlow, John P.
+
+And if we're to take seriously the idea of the electronic online
+forum, we have to deal with the access issue.  If the only people with
+access to the medium are well-educated, affluent, techno-literate elite,
+it won't be sufficiently inclusive to represent all points of view.
+
+We also need, fundamentally, a better infrastructure (the highway
+system for information).  As we move from the high-speed Internet to the
+even more powerful National Research and Education Network, we need to
+look at how to bring the power of these new media into the homes of
+everybody who might want it.  Addressing this ``last mile'' problem (phone
+networks are now largely digitized, fiber-optic systems, except for the
+mile between your home and the nearest switching station) should be a
+priority.
+
+Computer networks will eventually become ubiquitous around the
+world.  We should therefore be concerned with the impact on society that
+they have, the opportunities to improve society, and the dangers that
+they pose.   Fundamentally, we are optimists who believe in the
+potential of networks to enhance democratic values of openness,
+diversity, and innovation.
+
+Because the medium is so new, it is important now to develop
+policies at the national and international level that help achieve the
+potential of computer networks for society as a whole. By the time
+television was recognized as a vast wasteland it was already too late to
+change. There is a rare opportunity to develop policies in advance of a
+technologically and economically mature system which would be hard to
+change.
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{''As a net is made up of a series of ties, so everything in
+this world is connected by a series of ties.  If anyone thinks
+that the mesh of a net is an independent, isolated thing, he is
+mistaken.  It is called a net because it is made up of a series
+of interconnected meshes, and each mesh has its place and
+responsibility in relation to other meshes.''}
+
+-- @b{Buddha}
+@end flushright

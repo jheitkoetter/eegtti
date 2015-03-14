@@ -1,0 +1,1057 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: chap8.texi,v 2.3 1994/08/14 13:24:56 joke Rel $
+@c
+
+@c --------
+@c Up node is: Gophers
+
+@menu
+* Gophers::				Tunneling through the Net.
+* Burrowing Deeper::			And what you find there.
+* Gopher Commands::			To direct your Gopher.
+* Some Interesting Gophers::		A Gopher Hole collection.
+* Wide-Area Information Servers::	WAISs.
+* World-Wide Web::			HyperText across the World.
+* Clients::				What it needs to get things run.
+* When Things Go Wrong VI::		The final part of the series.
+* Gophers FYI::				Suggested further reading.
+@end menu
+
+
+@c --------
+@node Gophers
+@section Gophers
+
+Even with tools like Hytelnet and archie, telnet and ftp can still
+be frustrating.  There are all those telnet and ftp addresses to
+remember.  Telnet services often have their own unique commands.  And,
+oh, those weird directory and file names!
+
+But now that the Net has become a rich repository of information,
+people are developing ways to make it far easier to find and retrieve 
+information and files. Gophers and Wide-Area Information Servers (WAISs) 
+are two services that could ultimately make the Internet as easy to 
+navigate as commercial networks such as CompuServe or Prodigy.
+
+Both gophers and WAISs essentially take a request for information 
+and then scan the Net for it, so you don't have to.  Both also work 
+through menus -- instead of typing in some long sequence of characters, 
+you just move a cursor to your choice and hit enter.  Gophers even 
+let you select files and programs from ftp sites this way. 
+
+Let's first look at gophers (named for the official mascot of the 
+University of Minnesota, where the system was developed).
+@cindex Gopher
+
+Many public-access sites now have gophers online.  To use one, type
+
+@example
+gopher
+@end example
+
+at the command prompt and hit enter.  If you know your site does not have 
+a gopher, or if nothing happens when you type that, telnet to
+
+@example
+consultant.micro.umn.edu
+@end example
+
+At the log-in prompt, type
+
+@example
+gopher
+@end example
+
+and hit enter.  You'll be asked what type of terminal emulation you're
+using, after which you'll see something like this:
+
+@example
+@cartouche
+Internet Gopher Information Client v1.03
+
+Root gopher server: gopher.micro.umn.edu
+
+-->  1.  Information About Gopher/
+     2.  Computer Information/
+     3.  Discussion Groups/
+     4.  Fun & Games/
+     5.  Internet file server (ftp) sites/
+     6.  Libraries/
+     7.  News/
+     8.  Other Gopher and Information Servers/
+     9.  Phone Books/
+     10. Search lots of places at the U of M  <?>
+     11. University of Minnesota Campus Information/
+
+Press ? for Help, q to Quit, u to go up a menu      Page: 1/1
+@end cartouche
+@end example
+
+Assuming you're using VT100 or some other VT emulation, you'll be 
+able to move among the choices with your up and down arrow keys.  When 
+you have your cursor on an entry that looks interesting, just hit enter, 
+and you'll either get a new menu of choices, a database entry form, or a 
+text file, depending on what the menu entry is linked to (more on how to 
+tell which you'll get in a moment).
+
+Gophers are great for exploring the resources of the Net.  Just keep 
+making choices to see what pops up.  Play with it; see where it takes 
+you.  Some choices will be documents.  When you read one of these and 
+either come to the end or hit a lower-case @samp{q} to quit reading it, you'll 
+be given the choice of saving a copy to your home directory or e-mailing 
+it to yourself.  Other choices are simple databases that let you enter a 
+word to look for in a particular database.  To get back to where you 
+started on a gopher, hit your @samp{u} key at a menu prompt, which will move you 
+back ``up'' through the gopher menu structure (much like ``cd ..'' in ftp).
+
+Notice that one of your choices above is ``Internet file server (ftp) 
+sites.''  Choose this, and you'll be connected to a modified archie 
+program -- an archie with a difference.  When you search for a file 
+through a gopher archie, you'll get a menu of sites that have the file 
+you're looking for, just as with the old archie.  Only now, instead of 
+having to write down or remember an ftp address and directory, all you 
+have to do is position the cursor next to one of the numbers in the menu 
+and hit enter.  You'll be connected to the ftp site, from which you can 
+then choose the file you want.  This time, move the cursor to the file 
+you want and hit a lower-case @samp{s}.  You'll be asked for a name in your home 
+directory to use for the file, after which the file will be copied to 
+your home system.  Unfortunately, this file-transfer process does not yet 
+work with all public-access sites for computer programs and compressed 
+files.  If it doesn't work with yours, you'll have to get the file the 
+old-fashioned way, via anonymous ftp. 
+
+In addition to ftp sites, there are hundreds of databases and 
+libraries around the world accessible through gophers.  There is not yet
+a common gopher interface for library catalogs, so be prepared to follow
+the online directions more closely when you use gopher to connect to
+one.
+
+Gopher menu entries that end in a @samp{/} are gateways to another menu of 
+options.  Entries that end in a period are text, graphics or program 
+files, which you can retrieve to your home directory (or e-mail to 
+yourself or to somebody else).  A line that ends in @samp{<?>} or
+@samp{<CSO>} 
+represents a request you can make to a database for information.  The 
+difference is that @samp{<?>} entries call up one-line interfaces in which you 
+can search for a keyword or words, while @samp{<CSO>} brings up an electronic 
+form with several fields for you to fill out (you might see this in 
+online ``White Pages'' directories at colleges).
+
+Gophers actually let you perform some relatively sophisticated 
+Boolean searches.  For example, if you want to search only for files that 
+contain the words ``MS-DOS'' and ``Macintosh,'' you'd type
+
+@example 
+ms-dos and macintosh
+@end example 
+
+(gophers are not case-sensitive) in the keyword field.  Alternately, if 
+you want to get a list of files that mention either ``MS-DOS'' or 
+``Macintosh,'' you'd type
+
+@example
+ms-dos or macintosh
+@end example
+
+
+@c --------
+@node Burrowing Deeper
+@section Burrowing Deeper
+As fascinating as it can be to explore ``gopherspace,'' you might one 
+day want to quickly retrieve some information or a file.  Or you might 
+grow tired of calling up endless menus to get to the one you want. 
+Fortunately,  there are ways to make even gophers easier to use. 
+
+One is with archie's friend, veronica (it allegedly is an acronym, 
+but don't believe that for a second), who does for gopherspace what 
+archie does for ftp sites. 
+@cindex Veronica
+
+In most gophers, you'll find veronica by selecting ``Other gopher and 
+information services'' at the main menu and then ``Searching through 
+gopherspace using veronica.''  Select this and you'll get something like 
+this: 
+
+@example
+@cartouche
+              Internet Gopher Information Client v1.1
+
+-->  1.  Search titles in Gopherspace using veronica.
+     2.  FAQ:  Frequently-Asked Questions about veronica  (1993/08/23).
+     3.  How to compose  veronica queries (NEW June 24) READ ME!!.
+     4.  Search Gopher Directory Titles at PSINet <?>
+     5.  Search Gopher Directory Titles at SUNET <?>
+     6.  Search Gopher Directory Titles at U. of Manitoba <?>
+     7.  Search Gopher Directory Titles at University of Cologne <?>
+     8.  Search gopherspace at PSINet <?>
+     9.  Search gopherspace at SUNET <?>
+     10. Search gopherspace at U. of Manitoba <?>
+     11. Search gopherspace at University of Cologne <?>
+
+Press ? for Help, q to Quit, u to go up a menu                Page: 1/1
+@end cartouche
+@end example
+
+A few choices there!  First, the difference between searching 
+directory titles and just plain ol' gopherspace.  If you already know the 
+sort of directory you're looking for (say a directory containing MS-DOS 
+programs), do a directory-title search.  But if you're not sure what kind 
+of directory your information might be in, then do a general 
+gopherspace search. In general, it doesn't matter which of the particular 
+veronicas you use -- they should all be able to produce the same results.  
+The reason there is more than one is because the Internet has become so 
+popular that only one veronica (or one gopher or one of almost anything) 
+would quickly be overwhelmed by all the information requests from around 
+the world.  
+
+You can use veronica to search for almost anything.  Want to find 
+museums that might have online displays from their exhibits?  Try 
+searching for ``museum.''  Looking for a copy of the Declaration of 
+Independence?  Try ``declaration.'' 
+
+In many cases, your search will bring up a new gopher menu of 
+choices to try.
+
+Say you want to impress those guests coming over for dinner on 
+Friday by cooking cherries flambe. If you were to call up veronica and 
+type in ``flambe'' after calling up veronica, you would soon get a menu 
+listing several flambe recipes, including one called ``dessert flambe.''  
+Put your cursor on that line of the menu and hit enter, and you'll find 
+it's a menu for cherries flambe.  Then hit your @samp{q} key to quit, and gopher 
+will ask you if you want to save the file in your home directory on your 
+public-access site or whether you want to e-mail it somewhere. 
+
+As you can see, you can use veronica as an alternative to archie, 
+which, because of the Internet's growing popularity, seems to take longer 
+and longer to work.
+
+In addition to archie and veronica, we now also have jugheads (no 
+bettys yet, though).  These work the same as veronicas, but their 
+searches are limited to the specific gopher systems on which they reside.
+@cindex Jughead
+
+If there are particular gopher resources you use frequently, there 
+are a couple of ways to get to them even more directly.
+
+One is to use gopher in a manner similar to the way you can use 
+telnet. If you know a particular gopher's Internet address (often the 
+same as its telnet or ftp address), you can connect to it directly, 
+rather than going through menus.  For example, say you want to use the 
+gopher at @host{info.umd.edu}.  If your public-access site has a gopher system 
+installed, type this 
+
+@example
+gopher info.umd.edu
+@end example
+and you'll be connected.
+
+But even that can get tedious if there are several gophers you use 
+frequently. That's where bookmarks come in.  Gophers let you create a 
+list of your favorite gopher sites and even database queries.  Then, 
+instead of digging ever deeper into the gopher directory structure, you 
+just call up your bookmark list and select the service you want.
+
+To create a bookmark for a particular gopher site, first call up 
+gopher.  Then go through all the gopher menus until you get to the menu 
+you want.  Type a capital @samp{A}. You'll be given a suggested name for the 
+bookmark enty, which you can change if you want by backspacing over the 
+suggestion and typing in your own.  When done, hit enter.  Now, whenever 
+you're in gopherspace and want to zip back to that particular gopher 
+service, just hit your @samp{V} key (upper- or lower-case; in this instance, 
+gopher doesn't care) anywhere within gopher.  This will bring up a list 
+of your bookmarks. Move to the one you want and hit enter, and you'll be 
+connected.
+
+Using a capital @samp{A} is also good for saving particular database or 
+veronica queries that you use frequently (for example, searching for 
+news stories on a particular topic if your public-access site maintains 
+an indexed archive of wire-service news).
+
+Instead of a capital @samp{A}, you can also hit a lower-case @samp{a}.  This will 
+bring you to the particular line within a menu, rather than show you the 
+entire menu.
+@cindex Gopher, bookmark
+
+If you ever want to delete a bookmark, hit @samp{V} within gopher, select 
+the item you want to get rid of, and then hit your @samp{D} key.
+One more hint:
+If you want to find the address of a particular gopher service, hit 
+your @samp{=} key after you've highlighted its entry in a gopher menu.  You'll 
+get back a couple of lines, most of which will be technicalese of no 
+immediate value to most folks, but some of which will consist of the 
+site's address.
+
+@ignore
+@c --------
+@node Veronica
+@section Veronica
+
+Veronica is a ``Very Easy Rodent-Oriented Net-wide Index to Computerized
+Archives.''  Veronica's name is a play on the concepts of both gopher and
+archie.  (Remember the comic book couple Archie and Veronica?  Veronica
+does for gopher what archie does for anonymous FTP.)  Veronica searches
+through hundreds of gopher holes looking for anything that matches a
+keyword supplied by the user, and assembles a list of gopher servers that
+contain items of interest.  Note:  veronica checks @emph{titles} of gopher
+items only, not their contents.
+@end ignore
+
+
+@c --------
+@node Gopher Commands
+@section Gopher Commands
+@table @code
+
+@item a
+Add a line in a gopher menu to your bookmark list.
+ 
+@item A
+Add an entire gopher menu or a database query to your bookmark 
+list. 
+ 
+@item d
+Delete an entry from your bookmark list (you have to hit @samp{v} 
+first).
+
+@item q
+Quit, or exit, a gopher.  You'll be asked if you really want to.
+
+@item Q
+Quit, or exit, a gopher without being asked if you're sure.
+
+@item s
+Save a highlighted file to your home directory.
+
+@item u
+Move back up a gopher menu structure
+
+@item v 
+View your bookmark list.
+
+@item =
+Get information on the originating site of a gopher entry.
+
+@item >
+Move ahead one screen in a gopher menu.
+
+@item <
+Move back one screen in a gopher menu.
+@end table
+
+
+@c --------
+@node Some Interesting Gophers
+@section Some Interesting Gophers
+There are now hundreds of gopher sites around the world.  What 
+follows is a list of some of them.  Assuming your site has a gopher 
+``client'' installed, you can reach them by typing 
+
+@example
+gopher sitename
+@end example
+
+at your command line. Can't find what you're looking for? Remember to use 
+veronica to look up categories and topics! 
+
+@c --------
+@menu
+* Gopher Agriculture::
+* Gopher Animals::
+* Gopher Architecture::
+* Gopher Art::
+* Gopher Astronomy::
+* Gopher Census::
+* Gopher Computers::
+* Gopher Disability::
+* Gopher Environment::
+* Gopher Entomology::
+* Gopher Geology::
+* Gopher Government::
+* Gopher Health::
+* Gopher History::
+* Gopher Internet::
+* Gopher Israel::
+* Gopher Japan::
+* Gopher Music::
+* Gopher Nature::
+* Gopher Sports::
+* Gopher Weather::
+* More Gophers::
+@end menu
+
+
+@c --------
+@node Gopher Agriculture
+@subsection Agriculture
+@host{cyfer.esusda.gov}
+More agricultural statistics and
+regulations than most people will
+ever need.
+ 
+@host{usda.mannlib.cornell.edu}
+More than 140 different types of 
+agricultural data, most in Lotus 1-2-3
+spreadsheet format.
+
+
+@c --------
+@node Gopher Animals
+@subsection Amimals
+@host{saimiri.primate.wisc.edu}
+Information on primates and animal-welfare 
+laws.
+
+
+@c --------
+@node Gopher Architecture
+@subsection Architecture
+@host{libra.arch.umich.edu}
+Maintains online exhibits of a variety of
+architectural images.
+
+
+@c --------
+@node Gopher Art
+@subsection Art
+@host{marvel.loc.gov}
+The Library of Congress maintains several
+online ``galleries'' of exhibits on display
+at the Library itself.  These pictures, in
+GIF or JPEG image format, can be 
+``delivered'' to your home directory, from 
+which you can download. Some pictures are
+@emph{HUGE}, so be careful what you get first. 
+Exhibits include works of art from the
+Vatican, copies of once secret Soviet 
+government documents and pictures of 
+artifacts related to Columbus's 1492 
+voyage. At the main menu, select 2 and then
+``Exhibits.''
+
+@host{galaxy.ucr.edu}
+The California Musuem of Art maintains its
+own online gallery here.  At the main menu,
+select ``Campus Events,'' then ``California
+Museum of Photography,'' then ``Network 
+Exhibitions.''
+
+
+@c --------
+@node Gopher Astronomy
+@subsection Astronomy
+@host{cast0.ast.cam.ac.uk}
+A gopher devoted to astronomy, run by the
+Institute of Astronomy and the Royal Greenwich
+Observatory, Cambridge, England.
+
+
+@c --------
+@node Gopher Census
+@subsection Census
+@host{bigcat.missouri.edu}
+You'll find detailed federal census data for
+communities of more than 10,000 people, as well
+as for states and counties here.  At the main
+menu, select ``Reference and Information Center,''
+then ``United States and Missouri Census
+Information'' and ``United States Census.''
+
+
+@c --------
+@node Gopher Computers
+@subsection Computers
+@host{wuarchive.wustl.edu}
+Dozens of directories with software for all sorts
+of computers.  Most programs have to be 
+``un-compressed'' before you can use them.
+
+@host{sumex-aim.stanford.edu}
+A similar type of system, with the emphasis on 
+Macintosh programs and files.
+
+
+@c --------
+@node Gopher Disability
+@subsection Disability
+@host{val-dor.cc.buffalo.edu}
+The Cornucopia of Disability Information carries
+numerous information resources on disability issues
+and links to other disability-related services.
+
+
+@c --------
+@node Gopher Environment
+@subsection Environment
+@host{ecosys.drdr.virginia.edu}
+Copies of Environmental Protection Agency
+factsheets on hundreds of chemicals; 
+searchable by keyword.  Select ``Education''
+and then ``Environmental fact sheets.''
+
+@host{envirolink.org}
+Dozens of documents and files related to 
+environmental activism around the world.
+
+@c --------
+@node Gopher Entomology
+@subsection Entomology
+@host{spider.ento.csiro.au}
+All about creepy-crawly things, both the good 
+and the bad ones.
+
+
+@c --------
+@node Gopher Geology
+@subsection Geology
+@host{gopher.stolaf.edu}
+Select ``Internet resources'' and then
+``Weather and geography'' for information on
+recent earthquakes.
+ 
+
+@c --------
+@node Gopher Government
+@subsection Government
+@host{mavel.loc.gov}
+Run by the Library of Congress, this site
+provides numerous informational resources,
+including access to the Library's 
+voluminous card catalog and all manner of
+data about the U.S. Congress.
+
+@host{gopher.lib.umich.edu}
+Another source for a wide variety of 
+government information, from Congressional
+committee assignments to information on
+NAFTA to economic statistics.
+  
+@host{ecix.doc.gov}
+Information on conversion of military 
+installations to private uses, run by the 
+Department of Commerce. 
+
+@host{sunsite.unc.edu}
+Copies of the 1993 and 1994 U.S. federal 
+budgets can be found by going into ``Sunsite
+archives,'' then ``Politics,'' then ``Sunsite
+political science archives.''
+
+@host{wiretap.spies.com}
+Various documents related to the government
+and constitution of Canada can be found in the 
+``Government docs'' area.
+
+@host{darcms1.dartmouth.edu}
+Look for government jobs in the ``Jobs'' menu.
+
+@host{stis.nih.gov}
+Go into the ``Other U.S. government gopher
+servers'' area for access to numerous other
+government gophers.
+
+
+@c ---------
+@node Gopher Health
+@subsection Health
+@host{odie.niaid.nih.gov}
+National Institutes of Health database on 
+AIDS. Includes information on the disease, 
+treatments, summaries of related stories in 
+daily newspapers. Look under ``AIDS related 
+information.''
+
+@host{helix.nih.gov}
+The National Cancer Institute provides 
+detailed factsheets on different cancers.  
+Select ``Health and clinical information'' and
+then ``Cancernet information.''
+
+@host{nysernet.org}
+Look for information on breast cancer in the
+``Special Collections: Breast Cancer'' menu.
+
+@host{welchlink.welch.jhu.edu}
+This is Johns Hopkins University's medical 
+gopher.
+
+
+@c --------
+@node Gopher History
+@subsection History
+See under Art (@pxref{Gopher Art}).
+
+
+@c --------
+@node Gopher Internet
+@subsection Internet
+@host{gopher.lib.umich.edu}
+Home to several guides to Internet resources
+in specific fields, for example, social 
+sciences.  Select ``What's New & Featured
+Resources'' and then ``Clearinghouse.''
+
+
+@c --------
+@node Gopher Israel
+@subsection Israel
+@host{jerusalem1.datasrv.co.il}
+This Israeli system offers numerous documents
+on Israel and Jewish life.
+
+
+
+@c --------
+@node Gopher Japan
+@subsection Japan
+@host{gopher.ncc.go.jp}
+Look in the ``Japan information'' menu for 
+documents related to Japanese life and culture.
+
+
+@c --------
+@node Gopher Music
+@subsection Music
+@host{mtv.com}
+Run by MTV VJ Adam Curry, this site not
+only has music news but Curry's daily
+Cybersleaze celebrity report.
+@cindex MTV
+
+
+@c --------
+@node Gopher Nature
+@subsection Nature
+@host{ucmp1.berkeley.edu}
+The University of California at Berkeley's
+Museum of Palentology runs several online
+exhibits. You can obtain GIF images of a
+variety of different plants and birds and
+other animals in the ``Remote Nature''
+area. An ``Origin of the Species'' menu lets
+you read Darwin's work or search it by
+key word.
+
+
+@c --------
+@node Gopher Sports
+@subsection Sports
+@host{culine.colorado.edu}
+Look up schedules for teams in various professional
+sports leagues here, under ``Professional Sports
+Schedules.''
+
+
+@c --------
+@node Gopher Weather
+@subsection Weather
+@host{ashpool.micro.umn.edu}
+Look up weather forecasts for major 
+American and Canadian cities in the 
+``Weather'' area.
+
+@host{wx.atmos.uiuc.edu}
+Look up weather forecasts for North America or
+bone up on your weather facts.
+
+
+@c --------
+@node More Gophers 
+@subsection More Gophers
+Blake Gumprecht maintains a list of gopher and telnet sites related 
+to, or run by, the government. He posts it every three weeks to the 
+@news{news.answers} and @news{soc.answers} newsgroups on Usenet. It can also be 
+obtained via anonymous ftp from @host{rtfm.mit.edu}, as 
+@file{/pub/usenet/ news.answers/us-govt-net-pointers}. 
+@cindex Gumprecht, Blake
+
+Students at the University of Michigan's School of Information and 
+Library Studies, recently compiled separate lists of Internet resources 
+in 11 specific areas, from aeronautics to theater.  They can be obtained 
+via gopher at @host{gopher.lib.umich.edu}, in the ``What's New and Featured 
+Resources'' menu.
+
+
+@c --------
+@node Wide-Area Information Servers
+@section Wide-Area Information Servers
+
+Now you know there are hundreds of databases and library catalogs
+you can search through.  But as you look, you begin to realize that each
+seems to have its own unique method for searching.  If you connect to
+several, this can become a pain.  Gophers reduce this problem somewhat.
+
+Wide-area information servers promise another way to zero in on
+information hidden on the Net. In a WAIS, the user sees only one
+interface -- the program worries about how to access information on
+dozens, even hundreds, of different databases.  You give a WAIS a
+word and it scours the net looking for places where it's mentioned.  You
+get a menu of documents, each ranked according to how relevant to your
+search the WAIS thinks it is.
+
+Like gophers, WAIS ``client'' programs can already be found on many
+public-access Internet sites. If your system has a WAIS client, type 
+
+@example
+swais
+@end example
+
+at the command prompt and hit enter (the ``s'' stands for ``simple'').  If it 
+doesn't, telnet to bbs.oit.unc.edu, which is run by the University of North
+Carolina  At the ``login:'' prompt, type
+
+@example
+bbs
+@end example
+
+and hit enter.  You'll be asked to register and will then get a list of
+``bulletins,'' which are various files explaining how the system works.
+When done with those, hit your Q key and you'll get another menu.  Hit 4
+for the ``simple WAIS client,'' and you'll see something like this:
+
+@example
+@cartouche
+SWAIS                          Source Selection          Sources: 23#
+Server                         Source                             Cost
+001:   [           archie.au]  aarnet-resource-guide              Free
+002:   [    archive.orst.edu]  aeronautics                        Free
+003:   [nostromo.oes.orst.ed]  agricultural-market-news           Free
+004:   [sun-wais.oit.unc.edu]  alt-sys-sun                        Free
+005:   [    archive.orst.edu]  alt.drugs                          Free
+006:   [    wais.oit.unc.edu]  alt.gopher                         Free
+007:   [sun-wais.oit.unc.edu]  alt.sys.sun                        Free
+008:   [    wais.oit.unc.edu]  alt.wais                           Free
+009:   [    archive.orst.edu]  archie-orst.edu                    Free
+010:   [           archie.au]  archie.au-amiga-readmes            Free
+011:   [           archie.au]  archie.au-ls-lRt                   Free
+012:   [           archie.au]  archie.au-mac-readmes              Free
+013:   [           archie.au]  archie.au-pc-readmes               Free
+014:   [ pc2.pc.maricopa.edu]  ascd-education                     Free
+015:   [           archie.au]  au-directory-of-servers            Free
+016:   [   cirm2.univ-mrs.fr]  bib-cirm                           Free
+017:   [  cmns-sun.think.com]  bible                              Free
+018:   [      zenon.inria.fr]  bibs-zenon-inria-fr                Free
+
+Keywords:
+
+<space> selects, w for keywords, arrows move, <return> searches, q quits, ?
+@end cartouche
+@end example
+
+Each line represents a different database (the .au at the end of some of
+them means they are in Australia; the .fr on the last line represents a
+database in France).  And this is just the first page!  If you type a
+capital K, you'll go to the next page (there are several pages).
+Hitting a capital J will move you back a page.
+
+The first thing you want to do is tell the WAIS program which
+databases you want searched.  To select a database, move the cursor bar
+over the line you want (using your down and up arrow keys) and hit your
+space bar.  An asterisk will appear next to the line number.  Repeat this
+until you've selected all of the databases you want searched.  Then hit
+your W key, after which you'll be prompted for the key words you're
+looking for.  You can type in an entire line of these words -- separate
+each with a space, not a comma.
+
+Hit return, and the search begins.
+
+Let's say you're utterly fascinated with wheat.  So you might select
+agricultural-market-news to find its current world price.  But you also
+want to see if it has any religious implications, so you choose the
+Bible and the Book of Mormon.  What do you do with the stuff?  Select
+recipes and usenet-cookbook. Are there any recent Supreme Court
+decisions involving the plant? Chose supreme-court.  How about synonyms?
+Try roget-thesaurus and just plain thesaurus.
+
+Now hit w and type in wheat.  Hit enter, and the WAIS program begins
+its search.  As it looks, it tells you whether any of the databases are
+offline, and if so, when they might be ready for a search.  In about a
+minute, the program tells you how many hits it's found.  Then you get a new
+menu, that looks something like this:
+
+@example
+@cartouche
+Keywords:
+
+#    Score  SourceTitleLines
+001: [1000] (roget-thesaurus) #465. [results of comparison. 1] Di 19
+002: [1000] (roget-thesaurus) #609. Choice. -- N. choice, option; 36
+003: [1000] (roget-thesaurus) #465. [results of comparison. 1] Di 19
+004: [1000] (roget-thesaurus) #609. Choice. -- N. choice, option; 36
+005: [1000] (recipes)  aem@@mthvax Re: MONTHLY: Rec.Food.Recipes 425
+006: [1000] ( Book_of_Mormon) Mosiah 9:96
+007: [1000] ( Book_of_Mormon) 3 Nephi 18:185
+008: [1000] (agricultural-ma) Re: JO GR115, WEEKLY GRAIN82
+009: [ 822] (agricultural-ma) Re: WA CB351 PROSPECTIVE PLANTINGS 552
+010: [ 800] (        recipes) kms@@apss.a Re: REQUEST: Wheat-free, Suga 35
+011: [ 750] (agricultural-ma) Re: WA CB101 CROP PRODUCTION258
+012: [ 643] (agricultural-ma) Re: SJ GR850 DAILY NAT GRN SUM72
+013: [ 400] (        recipes) pat@@jaamer Re: VEGAN: Honey Granola63
+014: [ 400] (        recipes) jrtrint@@pa Re: OVO-LACTO: Sourdough/Trit 142
+@end cartouche
+@end example
+
+Each of these represents an article or citing that contains the word wheat,
+or some related word.  Move the cursor bar (with the down and up arrow
+keys) to the one you want to see, hit enter, and it will begin to appear
+on your screen.  The ``score'' is a WAIS attempt to gauge how closely the
+citing matches your request.  Doesn't look like the Supreme Court has had
+anything to say about the plant of late!
+
+Now think of how much time you would have spent logging onto various
+databases just to find these relatively trivial examples.
+
+
+@c --------
+@node World-Wide Web
+@section World-Wide Web
+
+Developed by researchers at CERN, the European Particle Physics
+Laboratory in Geneva, the World-Wide Web is somewhat similar to a WAIS.  
+But it's designed on a system known as hypertext.  Words in one document
+are ``linked'' to other documents.  It's sort of like sitting with an
+encyclopedia -- you're reading an article, see a reference that 
+intrigues you and so flip the pages to look up that reference.
+
+To take a walk on The Web try the WWW's (or W3 in the project's own jargon),
+default telnet site:
+
+@example
+info.cern.ch
+@end example
+
+No log in is needed.  When you connect, you'll see something like:
+
+@example
+@cartouche
+                                                         Overview of the Web
+                       GENERAL OVERVIEW
+                                       
+There is no "top" to the World-Wide Web. You can look at it from many points
+of view. If you have no other bias, here are some places to start:
+   
+by Subject[1]          A classification by subject of interest. Incomplete
+                       but easiest to use.
+                         
+by Type[2]             Looking by type of service (access protocol, etc) may
+                       allow to find things if you know what you are looking
+                       for.
+                         
+About WWW[3]           About the World-Wide Web global information sharing
+                       project
+                         
+Starting somewhere else
+
+To use a different default page, perhaps one representing your field of
+interest, see  "customizing your home page"[4].
+   
+What happened to CERN?
+
+1-6, Up, <RETURN> for more, Quit, or Help:
+@end cartouche
+@end example
+
+Ok. Now type @samp{3}, and get the following screen:
+
+@example
+@cartouche
+                                                  The World Wide Web project
+                       WORLD WIDE WEB
+
+The WorldWideWeb (W3) is a wide-area hypermedia[1] information retrieval
+initiative aiming to give universal access to a large universe of documents.
+
+Everything there is online about W3 is linked directly or indirectly to this
+document, including an executive summary[2] of the project, an illustrated
+talk[3] , Mailing lists[4] , Policy[5] and Conditions[6] , May's W3 news[7]
+, Frequently Asked Questions[8] .
+
+What's out there?[9]   Pointers to the world's online information,
+                       subjects[10] , W3 servers[11] , etc.
+
+WWW Software Products[12]
+                       What there is and how to get it: clients, servers and
+                       tools.
+
+Technical[13]          Details of protocols, formats, program internals etc
+
+Bibliography[14]       Paper documentation on W3 and references. Also:
+                       manuals[15] .
+
+1-20, Back, Up, <RETURN> for more, Quit, or Help:
+@end cartouche
+@end example
+
+You navigate the web by typing the number next to a given
+reference.  So if you want to know more about the web, hit 2.  This is
+another system that bears playing with.
+
+
+@c --------
+@node Clients
+@section Clients, or how to snare more on the Web
+
+If you are used to plain-vanilla Unix or MS-DOS, then the way these
+gophers and WAISs work seems quite straightforward.  But if you're used
+to a computer with a graphical interface, such as a Macintosh, an IBM
+compatible with Windows or a Next, you'll probably regard their
+interfaces as somewhat primitive. And even to a veteran MS-DOS user, the 
+World-Wide Web interface is rather clunky (and some of the documents and 
+files on the Web now use special formatting that would confuse your poor 
+computer). 
+@cindex NeXT
+@cindex NeXT Step
+@cindex MS-DOS
+@cindex Microsoft Windows
+@cindex Macintosh
+
+There are, however, ways to integrate these services into your
+graphical user interface.  In fact, there are now ways to tie into the
+Internet directly, rather than relying on whatever interface your
+public-access system uses, through what are known as ``client'' programs.  
+These programs provide graphical interfaces for everything from ftp to 
+the World-Wide Web.  
+
+There is now a growing number of these ``client'' programs for
+everything from ftp to gopher.  PSI of Reston, Va., which offers
+nationwide Internet access, in fact, requires its customers to use these
+programs. Using protocols known as SLIP and PPP, these programs communicate
+with the Net using the same basic data packets as much larger computers
+online.
+@cindex PSI
+@cindex SLIP
+@cindex PPP
+
+Beyond integration with your own computer's ``desktop,'' client
+programs let you do more than one thing at once on the net -- while you're
+downloading a large file in one window, you can be chatting with a
+friend through an Internet chat program in another.
+
+Unfortunately, using a client program can cost a lot of money.  Some 
+require you to be connected directly to the Internet through an Ethernet 
+network for example.  Others work through modem protocols, such as SLIP, 
+but public-access sites that allow such access may charge anywhere from 
+$25 to $200 a month extra for the service.
+@cindex SLIP
+
+Your system administrator can give you more information on setting
+up one of these connections.
+
+
+@c --------
+@node When Things Go Wrong VI
+@section When Things Go Wrong
+
+As the Internet grows ever more popular, its resources come under 
+more of a strain.  If you try to use gopher in the middle of the day, at 
+least on the East Coast of the U.S., you'll sometimes notice that it 
+takes a very long time for particular menus or database searches to come 
+up.  Sometimes, you'll even get a message that there are too many people 
+connected to whichever service you're trying to use and so you can't get 
+in.  The only alternative is to either try again in 20 minutes or so, or 
+wait until later in the day, when the load might be lower.  When this 
+happens in veronica, try one of the other veronica entries.
+
+When you retrieve a file through gopher, you'll sometimes be asked 
+if you want to store it under some ludicrously long name (there go our 
+friends the system administrators again, using 128 characters just 
+because Unix lets them).  With certain MS-DOS communications programs, if 
+that name is longer than one line, you won't be able to backspace all the 
+way back to the first line if you want to give it a simpler name.  
+Backspace as far as you can.  Then, when you get ready to download it to 
+your home computer, remember that the file name will be truncated on your 
+end, because of MS-DOS's file-naming limitations.  Worse, your computer
+might even reject the whole thing. What to do? Instead of saving it to
+your home directory, mail it to yourself.  It should show up in your mail
+by the time you exit gopher.  Then, use your mail command for saving it
+to your home directory -- at which point you can name it anything you want.
+Now you can download it.
+
+
+@c --------
+@node Gophers FYI
+@unnumberedsec FYI:
+
+@b{David Riggins} maintains a list of gophers by type and category. You 
+can find the most recent one at the ftp site @host{ftp.einet.net}, in the pub 
+directory.  Look for a file with a name like @file{gopher-jewels.txt}. 
+Alternately, you can get on a mailing list to get the latest version sent 
+to your e-mailbox automatically. Send a mail message to
+@email{gopherjewelslist-request@@tpis.cactus .org}
+(yep, that first part is all one word).  Leave 
+the ``subject:'' line blank, and as a message, write SUBSCRIBE. 
+
+The Interpedia project is an attempt to take gopher one step 
+further, by creating an online repository of all of the interesting and 
+useful information availble on the Net and from its users. To get on the 
+mailing list for the project, send an e-mail message, with a ``subject:'' 
+of ``subscribe'' to @email{interpedia-request@@telerama.lm.com}.  You can get 
+supporting documentation for the project via anonymous ftp at
+@host{ftp.lm.com} 
+in the @file{pub/interpedia} directory.
+
+See also the Usenet newsgroups @news{comp.infosystems.*}:
+
+@news{comp.infosystems.gopher},
+@news{comp.infosystems.wais}, and
+@news{comp.infosystems.www} are places to go for technical discussions about
+Gopher, WAISs, and the World-Wide Web project respectively.
+Moreover there are @news{comp.infosystems} for more general discussion of
+related issues.
+The group @news{comp.infosystems.gis} relates to Geographic Information
+Systems, and thus is more specialized on this subject.
+
+At present, there are no veronica clients;  veronica is a gopher tool.
+An informal veronica FAQ is posted regularly in @news{comp.infosystems.gopher}
+and archived on @host{veronica.scs.unr.edu} as @file{veronica/veronica-faq}.
+
+There even exists a Gopher service to read Usenet news:
+@samp{gopher gopher.msu.edu 4320}. But, the lines behind this
+service are few, and thus it's likely that you get the following message,
+when trying to enter:
+
+@example
+@cartouche
+We are sorry, but our Usenet News gateway limits the number of
+simultaneous connections.  If you were attempting to read news and were
+instead directed to this file, all of those connections are in use.  We
+offer this gateway as a "last resort" for people who have no other
+access for reading Usenet.  We do not have the capacity to serve as the
+Usenet gateway for large numbers of users around the Internet.
+Individuals who like this style of access should ask their Internet
+service providers to offer the same sort of gateway on their local
+Gopher server.  Individuals and campuses should consider installing
+local news feeds and local news readers (such as RN, NN, TIN, or
+Trumpet) so that users can read and post to Usenet newsgroups
+conveniently.
+
+For system administrators: the software we use to implement this gateway
+is the go4gw Gopher gateway software from Roland Schemers of Stanford
+University.  This software should be available by anonymous ftp from
+boombox.micro.umn.edu, somewhere under /pub/gopher.
+
+-- The Michigan State University Gopher Team
+@end cartouche
+@end example
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{``Reliable information is the basis of successful planning.''}
+--- @b{Christoph Columbus}
+
+@b{gopher}, n.
+1. Any of various short tailed, burrowing mammals of the
+family Geomyidae, of North America.  2. (Amer. colloq.) Native or
+inhabitant of Minnesota: the Gopher State.  3. (Amer. colloq.) One
+who runs errands, does odd-jobs, fetches or delivers documents for
+office staff.  4. (computer tech.) software following a simple
+protocol for burrowing through a TCP/IP internet.
+@end flushright
