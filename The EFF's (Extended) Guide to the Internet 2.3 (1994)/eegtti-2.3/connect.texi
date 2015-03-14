@@ -1,0 +1,331 @@
+@c
+@c INTERNATIONAL CONNECTIVITY
+@c     Copyright (c) 1994 by L. Landweber and the Internet Society (ISOC)
+@c  
+@c     $Id: connect.texi,v 2.3 1994/08/14 13:24:57 joke Rel $
+@c
+
+@c --------
+@c Up node is: Connectivity
+@menu
+* Connectivity::
+@end menu
+
+
+Version 11 - July 11, 1994@footnote{Copyright @copyright{} 1994
+Lawrence H. Landweber and the Internet Society. Unlimited
+permission to copy or use is hereby granted subject to inclusion
+of this copyright notice.}
+@cindex ISOC
+@cindex Connectivity
+@cindex Landweber, Lawrence H.
+
+Thanks to the many people from around the world  who  have  provided
+information. This version (postscript, ditroff, text forms, maps in
+postscript) and earlier versions may also be obtained by anonymous
+ftp from @host{ftp.cs.wisc.edu} in the @file{connectivity_table} directory.
+
+In the following, ``BITNET'' is used generically to  refer  to  BITNET
+plus  similar networks around the world (e.g., EARN, NETNORTH,
+GULFNET, etc.).
+
+SUMMARY
+
+NUMBER OF ENTITIES WITH INTERNATIONAL NETWORK CONNECTIVITY = 152
+NUMBER OF ENTITIES WITHOUT INTERNATIONAL NETWORK CONNECTIVITY = 86
+
+BITNET
+Col. 2 (Entities with international BITNET links.)
+b: minimal, one to five domestic BITNET sites, 18 entities
+B: widespread, more than five domestic BITNET sites, 34 entities
+
+IP INTERNET
+Col. 3 (Entities with international IP Internet links.)
+I: = operational, accessible from entire open IP Internet, 75 entities
+
+UUCP
+Col. 4 (Entities with domestic UUCP sites which  are  connected
+to the Global Multiprotocol Open Internet.)
+u: minimal, one to five domestic UUCP sites, 59 entities
+U: widespread, more than five domestic UUCP sites, 70 entities
+
+FIDONET
+Col. 5 (Entities with domestic FIDONET  sites  which  are
+connected to the Global Multiprotocol Open Internet)
+f: minimal, one to five domestic FIDONET sites, 27 entities
+F: widespread, more than five domestic FIDONET sites, 62 entities
+
+OSI
+Col. 6 (Entities with international  X.400  links  to  domestic
+sites  which  are  connected  to  the Global Multiprotocol Open
+Internet).
+o: minimal, one to five domestic X.400 sites, 8 entities
+O: widespread, more than five domestic X.400 sites, 23 entities
+
+An entity is a geographical area that has an ISO two letter
+country code (ISO 3166). These country codes are included in
+the Table below for each entity (Cols 8-9). Note that the ISO
+codes do not always agree with the top level DNS (Domain Name)
+code(s) used for a particular entity.
+
+Network connections have been reported, but not confirmed, to
+Bangladesh, Jordon, and Mongolia and so are omitted from the
+table.  Activity is underway to connect Lebanon, Guyana, and
+St. Vincent and the Grenadines but no definitive information
+has been received. Haiti has an email link but it does not fit
+into any of the categories of the table.
+
+@example
+----- AF       Afghanistan (Islamic Republic of)
+----- AL       Albania (Republic of)
+-I--- DZ       Algeria (People's Democratic Republic of)
+----- AS       American Samoa
+----- AD       Andorra (Principality of)
+----- AO       Angola (People's Republic of)
+----- AI       Anguilla
+-I--- AQ       Antarctica
+--u-- AG       Antigua and Barbuda
+BIUF- AR       Argentina (Argentine Republic)
+--U-- AM       Armenia
+---f- AW       Aruba
+-IUFo AU       Australia
+BIUFO AT       Austria (Republic of)
+b-U-- AZ       Azerbaijan
+--u-- BS       Bahamas (Commonwealth of the)
+b---- BH       Bahrain (State of)
+----- BD       Bangladesh (People's Republic of)
+--u-- BB       Barbados
+b-UF- BY       Belarus
+BIUFO BE       Belgium (Kingdom of)
+--U-- BZ       Belize
+----- BJ       Benin (People's Republic of)
+--Uf- BM       Bermuda
+----- BT       Bhutan (Kingdom of)
+--Uf- BO       Bolivia (Republic of)
+--u-- BA       Bosnia-Herzegovina
+--uf- BW       Botswana (Republic of)
+----- BV       Bouvet Island
+BIUFO BR       Brazil (Federative Republic of)
+----- IO       British Indian Ocean Territory
+----- BN       Brunei Darussalam
+bIUF- BG       Bulgaria (Republic of)
+--U-- BF       Burkina Faso (formerly Upper Volta)
+----- BI       Burundi (Republic of)
+----- KH       Cambodia
+--u-- CM       Cameroon (Republic of)
+BIUFO CA       Canada
+----- CV       Cape Verde (Republic of)
+----- KY       Cayman Islands
+----- CF       Central African Republic
+----- TD       Chad (Republic of)
+BIUF- CL       Chile (Republic of)
+-Iu-O CN       China (People's Republic of)
+----- CX       Christmas Island (Indian Ocean)
+----- CC       Cocos (Keeling) Islands
+BIu-- CO       Colombia (Republic of)
+----- KM       Comoros (Islamic Federal Republic of the)
+--u-- CG       Congo (Republic of the)
+--u-- CK       Cook Islands
+bIuf- CR       Costa Rica (Republic of)
+--uf- CI       Cote d'Ivoire (Republic of)
+-IuFo HR       Croatia
+--U-- CU       Cuba (Republic of)
+bI--- CY       Cyprus (Republic of)
+BIUF- CZ       Czech Republic
+BIUFO DK       Denmark (Kingdom of)
+----- DJ       Djibouti (Republic of)
+----- DM       Dominica (Commonwealth of)
+--Uf- DO       Dominican Republic
+----- TP       East Timor
+-Iu-- EC       Ecuador (Republic of)
+bIU-- EG       Egypt (Arab Republic of)
+----- SV       El Salvador (Republic of)
+----- GQ       Equatorial Guinea (Republic of)
+----- ER       Eritrea
+-IUF- EE       Estonia (Republic of)
+---f- ET       Ethiopia (People's Democratic Republic of)
+----- FK       Falkland Islands (Malvinas)
+--u-- FO       Faroe Islands
+-Iu-- FJ       Fiji (Republic of)
+BIUFO FI       Finland (Republic of)
+BIUFO FR       France (French Republic)
+--u-- GF       French Guiana
+--u-- PF       French Polynesia
+----- TF       French Southern Territories
+----- GA       Gabon (Gabonese Republic)
+----- GM       Gambia (Republic of the)
+--UF- GE       Georgia (Republic of)
+BIUFO DE       Germany (Federal Republic of)
+--uF- GH       Ghana (Republic of )
+----- GI       Gibraltar
+BIUFO GR       Greece (Hellenic Republic)
+-I-f- GL       Greenland
+--u-- GD       Grenada
+b-uf- GP       Guadeloupe (French Department of)
+-I-F- GU       Guam
+--u-- GT       Guatemala (Republic of)
+----- GN       Guinea (Republic of)
+----- GW       Guinea-Bissau (Republic of)
+----- GY       Guyana (Republic of)
+----- HT       Haiti (Republic of)
+----- HM       Heard and McDonald Islands
+----- HN       Honduras (Republic of)
+BI-F- HK       Hong Kong
+BIUFo HU       Hungary (Republic of)
+-IUFo IS       Iceland (Republic of)
+bIUfO IN       India (Republic of)
+-IuF- ID       Indonesia (Republic of)
+b---- IR       Iran (Islamic Republic of)
+----- IQ       Iraq (Republic of)
+BIUFO IE       Ireland
+BIUF- IL       Israel (State of)
+BIUFO IT       Italy (Italian Republic)
+--u-- JM       Jamaica
+BIUF- JP       Japan
+----- JO       Jordan (Hashemite Kingdom of)
+--UF- KZ       Kazakhstan
+---f- KE       Kenya (Republic of)
+--u-- KI       Kiribati (Republic of)
+----- KP       Korea (Democratic People's Republic of)
+BIUFO KR       Korea (Republic of )
+-I--- KW       Kuwait (State of)
+--U-- KG       Kyrgyz Republic
+----- LA       Lao People's Democratic Republic
+-IUF- LV       Latvia (Republic of)
+----- LB       Lebanon (Lebanese Republic)
+--u-- LS       Lesotho (Kingdom of)
+----- LR       Liberia (Republic of)
+----- LY       Libyan Arab Jamahiriya
+-I-f- LI       Liechtenstein (Principality of)
+-IUFo LT       Lithuania
+bIUFo LU       Luxembourg (Grand Duchy of)
+-I-F- MO       Macau (Ao-me'n)
+--u-- MK       Macedonia (Former Yugoslav Republic of)
+--u-- MG       Madagascar (Democratic Republic of)
+---f- MW       Malawi (Republic of)
+bIUF- MY       Malaysia
+----- MV       Maldives (Republic of)
+--U-- ML       Mali (Republic of)
+--u-- MT       Malta (Republic of)
+----- MH       Marshall Islands (Republic of the)
+----- MQ       Martinique (French Department of)
+----- MR       Mauritania (Islamic Republic of)
+--uf- MU       Mauritius
+----- YT       Mayotte
+BIuF- MX       Mexico (United Mexican States)
+----- FM       Micronesia (Federated States of)
+--uF- MD       Moldova (Republic of)
+----- MC       Monaco (Principality of)
+----- MN       Mongolia
+----- MS       Montserrat
+----- MA       Morocco (Kingdom of)
+--Uf- MZ       Mozambique (People's Republic of)
+----- MM       Myanmar (Union of)
+--Uf- NA       Namibia (Republic of)
+----- NR       Nauru (Republic of)
+--u-- NP       Nepal (Kingdom of)
+BIUFO NL       Netherlands (Kingdom of the)
+--u-- AN       Netherlands Antilles
+----- NT       Neutral Zone (between Saudi Arabia and Iraq)
+--U-- NC       New Caledonia
+-IUF- NZ       New Zealand
+-Iu-- NI       Nicaragua (Republic of)
+--u-- NE       Niger (Republic of the)
+---f- NG       Nigeria (Federal Republic of)
+--u-- NU       Niue
+----- NF       Norfolk Island
+----- MP       Northern Mariana Islands (Commonwealth of the)
+BIUFO NO       Norway (Kingdom of)
+----- OM       Oman (Sultanate of)
+--U-- PK       Pakistan (Islamic Republic of)
+----- PW       Palau (Republic of)
+bIuF- PA       Panama (Republic of)
+--u-- PG       Papua New Guinea
+--u-- PY       Paraguay (Republic of)
+-IUf- PE       Peru (Republic of)
+-IuF- PH       Philippines (Republic of the)
+----- PN       Pitcairn
+BIUF- PL       Poland (Republic of)
+bIUFO PT       Portugal (Portuguese Republic)
+bIUF- PR       Puerto Rico
+----- QA       Qatar (State of)
+-Iu-- RE       Re'union (French Department of)
+BIuf- RO       Romania
+BIUF- RU       Russian Federation
+----- RW       Rwanda (Rwandese Republic)
+----- SH       Saint Helena
+----- KN       Saint Kitts and Nevis
+--u-- LC       Saint Lucia
+----- PM       Saint Pierre and Miquelon (French Department of)
+----- VC       Saint Vincent and the Grenadines
+--u-- WS       Samoa (Independent State of)
+----- SM       San Marino (Republic of)
+----- ST       Sao Tome and Principe (Democratic Republic of)
+B---- SA       Saudi Arabia (Kingdom of)
+--Uf- SN       Senegal (Republic of)
+--u-- SC       Seychelles (Republic of)
+----- SL       Sierra Leone (Republic of)
+BIuF- SG       Singapore (Republic of)
+bIUF- SK       Slovakia
+-IUFO SI       Slovenia
+--u-- SB       Solomon Islands
+----- SO       Somalia (Somali Democratic Republic)
+-IUFO ZA       South Africa (Republic of)
+BIUFO ES       Spain (Kingdom of)
+--U-- LK       Sri Lanka (Democratic Socialist Republic of)
+----- SD       Sudan (Democratic Republic of the)
+--u-- SR       Suriname (Republic of)
+-I--- SJ       Svalbard and Jan Mayen Islands
+--u-- SZ       Swaziland (Kingdom of)
+BIUFo SE       Sweden (Kingdom of)
+BIUFO CH       Switzerland (Swiss Confederation)
+----- SY       Syria (Syrian Arab Republic)
+BIuF- TW       Taiwan, Province of China
+--u-- TJ       Tajikistan
+---f- TZ       Tanzania (United Republic of)
+-IUF- TH       Thailand (Kingdom of)
+--u-- TG       Togo (Togolese Republic)
+----- TK       Tokelau
+--u-- TO       Tonga (Kingdom of)
+--u-- TT       Trinidad and Tobago (Republic of)
+bIUfo TN       Tunisia
+BI-F- TR       Turkey (Republic of)
+--u-- TM       Turkmenistan
+----- TC       Turks and Caicos Islands
+----- TV       Tuvalu
+---F- UG       Uganda (Republic of)
+-IUF- UA       Ukraine
+----- AE       United Arab Emirates
+bIUFO GB       United Kingdom
+BIUFO US       United States (United States of America)
+----- UM       United States Minor Outlying Islands
+-IUF- UY       Uruguay (Eastern Republic of)
+--UF- UZ       Uzbekistan
+--u-- VU       Vanuatu (Republic of, formerly New Hebrides)
+----- VA       Vatican City State (Holy See)
+-IU-- VE       Venezuela (Republic of)
+--U-- VN       Vietnam (Socialist Republic of)
+----- VG       Virgin Islands (British)
+---f- VI       Virgin Islands (U.S.)
+----- WF       Wallis and Futuna Islands
+----- EH       Western Sahara
+----- YE       Yemen (Republic of)
+--uf- YU       Yugoslavia (Socialist Federal Republic of)
+----- ZR       Zaire (Republic of)
+---f- ZM       Zambia (Republic of)
+--uf- ZW       Zimbabwe (Republic of)
+@end example
+
+Please send corrections, information and/or comments
+(include details, e.g., on connections, sites,  contacts,  protocols,
+etc.) to:
+
+@flushright
+
+Larry Landweber
+Computer Sciences Dept.
+University of Wisconsin - Madison
+1210 W. Dayton St., Madison, WI 53706
+@email{lhl@@cs.wisc.edu}
+FAX 1-608-265-2635
+@end flushright

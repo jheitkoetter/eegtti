@@ -1,0 +1,188 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: adam.texi,v 2.3 1994/08/14 13:24:46 joke Rel $
+@c
+
+@emph{The revolution is just beginning.}
+@cindex Revolution
+
+New communications systems and digital technologies have already
+meant dramatic changes in the way we live.  Think of what is already
+routine that would have been considered impossible just ten years ago.
+You can browse through the holdings of your local library -- or of
+libraries halfway around the world -- do your banking and see if your
+neighbor has gone bankrupt, all through a computer and modem.
+
+Imploding costs coupled with exploding power are bringing ever
+more powerful computer and digital systems to ever growing numbers of
+people.  The Net, with its rapidly expanding collection of databases
+and other information sources, is no longer limited to the
+industrialized nations of the West; today the web extends into once
+remote areas from Siberia to Zimbabwe. The cost of computers and
+modems used to plug into the Net, meanwhile, continue to plummet,
+making them ever more affordable.
+
+Cyberspace has become a vital part of millions of people's daily
+lives. People form relationships online, they fall in love, they get
+married, all because of initial contacts in cyberspace, that ephemeral
+``place'' that transcends national and state boundaries. Business
+deals are transacted entirely in ASCII.  Political and social
+movements begin online, coordinated by people who could be thousands
+of miles apart.
+@cindex Cyberspace
+
+@emph{Yet this is only the beginning.}
+
+We live in an age of communication, yet, the various media we use
+to talk to one another remain largely separate systems. One day,
+however, your telephone, TV, fax machine and personal computer will be
+replaced by a single ``information processor'' linked to the worldwide
+Net by strands of optical fiber.
+
+Beyond databases and file libraries, power will be at your
+fingertips. Linked to thousands, even millions of like-minded people,
+you'll be able to participate in social and political movements across
+the country and around the world.
+
+How does this happen? In part, it will come about through new
+technologies. High-definition television will require the development
+of inexpensive computers that can process as much information as
+today's workstations.  Telephone and cable companies will compete to
+see who can bring those fiber-optic cables into your home first.  
+High-speed data networks, such as the Internet, will be replaced by even more
+powerful systems.
+
+The Clinton administration, arguably the first led by people who 
+know how to use not only computer networks but computers, is pushing for 
+creation of a series of ``information superhighways'' comparable in scope 
+to the Interstate highway system of the 1950s (one of whose champions in 
+the Senate has a son elected vice president in 1992).    
+@cindex Information highway
+@cindex Clinton administration
+
+Right now, we are in the network equivalent of the early 1950s, 
+just before the creation of that massive highway network. Sure, there are 
+plenty of interesting things out there, but you have to meander along 
+two-lane roads, and have a good map, to get to them. 
+
+Creation of this new Net will also require a new communications
+paradigm: the Net as information utility.  The Net remains a somewhat
+complicated and mysterious place.  To get something out of the Net
+today, you have to spend a fair amount of time with a Net veteran or a
+manual like this.  You have to learn such arcana as the vagaries of the
+Unix cd command.
+
+Contrast this with the telephone, which now also provides access to
+large amounts of information through push buttons, or a computer network
+such as Prodigy, which one navigates through simple commands and mouse
+clicks.
+@cindex Prodigy
+
+Internet system administrators have begun to realize that not all 
+people want to learn the intricacies of Unix, and that that fact does 
+not make them bad people.  We are already seeing the development of 
+simple interfaces that will put the Net's power to use by millions of 
+people.  You can already see their influence in the menus of gophers and 
+the World-Wide Web, which require no complex computing skills but which 
+open the gates to thousands of information resources.  Mail programs and 
+text editors such as Pico and Pine promise much of the power of older 
+programs such as emacs at a fraction of the complexity. 
+@cindex Pico
+@cindex Pine
+@cindex Word-Wide Web
+
+Some software engineers are looking at taking this even further, by
+creating graphical interfaces that will let somebody navigate the
+Internet just by clicking on the screen with a mouse or by calling up an
+easy text editor, sort of the way one can now navigate a Macintosh
+computer -- or a commercial online service such as Prodigy.
+
+@emph{Then there are the Internet services themselves.}
+
+For every database now available through the Internet, there are
+probably three or four that are not.  Government agencies are only
+slowly beginning to connect their storehouses of information to the
+Net. Several commercial vendors, from database services to booksellers,
+have made their services available through the Net.
+
+Few people now use one of the Net's more interesting
+applications.  A standard known as MIME lets one send audio and
+graphics files in a message.  Imagine opening your e-mail one day to hear
+your granddaughter's first words, or a ``photo'' of your friend's new
+house.  Eventually, this standard could allow for distribution of even
+small video displays over the Net.
+@cindex MIME, Multi-purpose Internet Mail Extensions
+
+All of this will require vast new amounts of Net power, to handle
+both the millions of new people who will jump onto the Net and the new
+applications they want.  Replicating a moving image on a computer screen
+alone takes a phenomenal amount of computer bits, and computing power to
+arrange them.
+
+All of this combines into a National Information Infrastructure able 
+to move billions of bits of information in one second -- the kind of 
+power needed to hook information ``hoses'' into every business and house.
+@cindex NREN
+
+As these ``superhighways'' grow, so will the ``on ramps,'' for a high-speed
+road does you little good if you can't get to it.   The costs of 
+modems seem to fall as fast as those of computers.  High-speed modems 
+(9600 baud and up) are becoming increasingly affordable.  At 9600 baud,
+@cindex Modem, high-speed
+you can download a satellite weather image of North America in less than 
+two minutes, a file that, with a slower modem could take up to 20 
+minutes to download.  Eventually, homes could be connected directly to a 
+national digital network.  Most long-distance phone traffic is already 
+carried in digital form, through high-volume optical fibers.  Phone 
+companies are ever so slowly working to extend these fibers the ``final 
+mile'' to the home.  The Electronic Frontier Foundation is working to 
+ensure these links are affordable. 
+
+Beyond the technical questions are increasingly thorny social,
+political and economic issues. Who is to have access to these
+services, and at what cost?  If we live in an information age, are we
+laying the seeds for a new information under class, unable to compete
+with those fortunate enough to have the money and skills needed to
+manipulate new communications channels? Who, in fact, decides who has
+access to what?  As more companies realize the potential profits to be
+made in the new information infrastructure, what happens to such
+systems as Usenet, possibly the world's first successful anarchistic
+system, where everybody can say whatever they want?
+
+What are the laws of the electronic frontier?  When national and
+state boundaries lose their meaning in cyberspace,  the question might
+even be: WHO is the law?  What if a practice that is legal in one
+country is ``committed'' in another country where it is illegal, over a
+computer network that crosses through a third country? Who goes after
+computer crackers?
+
+@emph{What role will you play in the revolution?}
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{``The first duty of a revolutionary is to get away with it.''}
+--- @b{Abbie Hoffman}
+
+@emph{``The only act of revolution left
+in a collective world, is thinking for yourself.''}
+--- @b{Bob Geldof}, @fyi{Is that it?}
+
+@emph{
+@r{HAMLET:} ``O, I die, Horatio;
+        The potent poison quite o'er-crows my spirit:
+        I cannot live to hear the news from England;
+        But I do prophesy the election lights
+        On Fortinbras: he has my dying voice;
+        So tell him, with the occurrents, more and less,
+        Which have solicited. The rest is silence.''}
+--- @b{Shakespeare}, @fyi{Hamlet, Act V, Scene II}
+(text ftp'd from @host{terminator.rs.itd.umich.edu})
+@end flushright

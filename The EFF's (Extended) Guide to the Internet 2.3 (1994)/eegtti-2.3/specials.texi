@@ -1,0 +1,97 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: specials.texi,v 2.3 1994/08/14 13:25:10 joke Rel $
+@c
+
+@c --------
+@tex
+@message{Loading}
+@end tex
+
+@c --------
+@c Experiment with smaller amounts of whitespace between chapters
+@c and sections.
+@iftex
+@tex
+@message{experimental layout,}
+@global@chapheadingskip = 15pt plus 4pt minus 2pt
+@global@secheadingskip = 12pt plus 3pt minus 2pt
+@global@subsecheadingskip = 9pt plus 2pt minus 2pt
+@end tex
+@end iftex
+
+
+@c --------
+@c Experimental html support for texi2html'd docs (will be standart, soon)
+@iftex
+@tex
+@message{html support,}
+@global@def@ifhtml{@doignore{ifhtml}}
+@end tex
+@end iftex
+
+
+@c --------
+@c Experiment with smaller amounts of whitespace between paragraphs in
+@c the 8.5 by 11 inch format.
+@ifclear smallbook
+@tex
+@global@parskip 6pt plus 1pt
+@end tex
+@end ifclear
+
+
+@c --------
+@c Experiment with own auto-indexing facilities
+@tex
+@message{autoindexing,}
+@global@def@autoindex#1#2{@doind{#1}{#2}}%	% Bernd Raichle & -joke
+@end tex
+
+@c --------
+@c @email{}
+@defindex em
+@tex
+@global@def@email#1{{@tt <#1>}%			% RFC-822 compliance
+@autoindex{em}{#1}}%
+@end tex
+
+@c --------
+@c @explain{}
+@tex
+@global@def@explain#1{@noindent{@bf #1}@space@space%
+@autoindex{cp}{#1}}%
+@end tex
+
+@c --------
+@c @fyi{}
+@tex
+@global@def@fyi#1{{@it ``#1''}}%
+@end tex
+
+@c --------
+@c @host{}
+@defindex ho
+@tex
+@global@def@host#1{{@bf #1}%
+@autoindex{ho}{#1}}%
+@end tex
+
+@c --------
+@c @news{}
+@tex
+@global@def@news#1{{@bf #1}%
+@autoindex{cp}{#1}}%
+@end tex
+
+@c --------
+@c @message{postscript figures,}
+@c @include{psfig}
+
+@tex
+@message{and turn 'em on.}
+@end tex

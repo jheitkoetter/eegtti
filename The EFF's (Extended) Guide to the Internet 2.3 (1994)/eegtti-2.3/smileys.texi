@@ -1,0 +1,440 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: smileys.texi,v 2.3 1994/08/14 13:25:09 joke Rel $
+@c
+
+@c --------
+@c Up Node is The Unofficial Smiley Dictionary
+
+@c --------
+@menu
+* Basic Smileys::
+* Widely used Smileys::
+* Midget Smileys::
+* Mega Smileys::
+* Usenet Smileys::
+* Emotional Smileys::
+@end menu
+
+This @fyi{Unofficial Smiley Dictionary} is only one of many different
+collections by various ``editors'' you'll come across at many places on
+the Net, e.g. you can get ``The-Smiley-File'' from @host{gopher.world.std.com};
+and even a complete booklet has been written on smileys and is available as:
+@cindex Smiley
+
+@quotation
+@b{David W. Sanderson} (ed.), @fyi{Smileys}, O'Reilly & Associates,
+Sebastopol, CA. 93 pages. ISBN 1-56592-041-4. Price $5.95 (US).
+@end quotation
+
+@c --------
+@node Basic Smileys
+@section Basic Smileys
+
+@explain{@code{:-)}}
+Your basic smiley. This smiley is used to inflect a sarcastic or
+joking statement since we can't hear voice inflection over e-mail.
+
+@explain{@code{;-)}}
+Winky smiley. User just made a flirtatious and/or sarcastic remark.
+More of a ``don't hit me for what I just said'' smiley.
+
+@explain{@code{:-(}}
+Frowning smiley. User did not like that last statement or is upset
+or depressed about something.
+
+@explain{@code{:-I}}
+Indifferent smiley. Better than a @code{:-(} but not quite as
+good as a @code{:-)}.
+
+@explain{@code{:->}}
+User just made a really biting sarcastic remark. Worse than a @code{;-)}.
+
+@explain{@code{>:->}}
+User just made a really devilish remark.
+
+@explain{@code{>;->}}
+Winky and devil combined. A very lewd remark was just made.
+
+
+@c --------
+@node Widely used Smileys
+@section Widely used Smileys
+
+@explain{@code{(-:}}
+User is left handed.
+
+@explain{@code{%-)}}
+User has been staring at a green screen for 15 hours straight.
+
+@explain{@code{:*)}}
+User is drunk.
+
+@explain{@code{[:]}}
+User is a robot.
+
+@explain{@code{8-)}}
+User is wearing sunglasses.
+
+@explain{@code{B:-)}}
+Sunglasses on head.
+
+@explain{@code{::-)}}
+User wears normal glasses.
+
+@explain{@code{B-)}}
+User wears horn-rimmed glasses.
+
+@explain{@code{8:-)}}
+User is a little girl.
+
+@explain{@code{:-)-8}}
+User is a Big girl.
+
+@explain{@code{:-@{)}}
+User has a mustache.
+
+@explain{@code{:-@{@}}}
+User wears lipstick.
+
+@explain{@code{@{:-)}}
+User wears a toupee.
+
+@explain{@code{@}:-(}}
+Toupee in an updraft.
+
+@explain{@code{:-[}}
+User is a vampire.
+
+@explain{@code{:-E}}
+Bucktoothed vampire.
+
+@explain{@code{:-F}}
+Bucktoothed vampire with one tooth missing.
+
+@explain{@code{:-7}}
+User juust made a wry statement.
+
+@explain{@code{:-*}}
+User just ate something sour.
+
+@explain{@code{:-)~}}
+User drools.
+
+@explain{@code{:-~)}}
+User has a cold.
+
+@explain{@code{:'-(}}
+User is crying.
+
+@explain{@code{:'-)}}
+User is so happy, s/he is crying.
+
+@explain{@code{:-@@}}
+User is screaming.
+
+@explain{@code{:-#}}
+User wears braces.
+
+@explain{@code{:^)}}
+User has a broken nose.
+
+@explain{@code{:v)}}
+User has a broken nose, but it's the other way.
+
+@explain{@code{:_)}}
+User's nose is sliding off of his face.
+
+@explain{@code{:<)}}
+User is from an Ivy League School.
+
+@explain{@code{:-&}}
+User is tongue tied.
+
+@explain{@code{=:-)}}
+User is a hosehead.
+
+@explain{@code{-:-)}}
+User is a punk rocker.
+
+@explain{@code{-:-(}}
+Real punk rockers don't smile.
+
+@explain{@code{:=)}}
+User has two noses.
+
+@explain{@code{+-:-)}}
+User is the Pope or holds some other religious office.
+
+@explain{@code{`:-)}}
+User shaved one of his eyebrows off this morning.
+
+@explain{@code{,:-)}}
+Same thing...other side.
+
+@explain{@code{|-I}}
+User is asleep.
+
+@explain{@code{|-O}}
+User is yawning/snoring.
+
+@explain{@code{:-Q}}
+User is a smoker.
+
+@explain{@code{:-?}}
+User smokes a pipe.
+
+@explain{@code{O-)}}
+Megaton Man On Patrol!  (or else, user is a scuba diver)
+
+@explain{@code{O :-)}}
+User is an angel (at heart, at least).
+
+@explain{@code{:-`}}
+User spitting out its chewing tobacco.
+
+@explain{@code{:-S}}
+User just made an incoherent statement.
+
+@explain{@code{:-D}}
+User is laughing (at you!)
+
+@explain{@code{:-X}}
+User's lips are sealed.
+
+@explain{@code{:-C}}
+User is really bummed.
+
+@explain{@code{<|-)}}
+User is Chinese.
+
+@explain{@code{<|-(}}
+User is Chinese and doesn't like these kind of jokes.
+
+@explain{@code{:-/}}
+User is skeptical.
+
+@explain{@code{C=:-)}}
+User is a chef.
+
+@explain{@code{@@=}}
+User is pro-nuclear war.
+
+@explain{@code{*<:-)}}
+User is wearing a Santa Claus Hat.
+
+@explain{@code{:-o}}
+Uh oh!
+
+@explain{@code{(8-o}}
+It's Mr. Bill!
+
+@explain{@code{*:o)}}
+And Bozo the Clown!
+
+@explain{@code{3:]}}
+Pet smiley.
+
+@explain{@code{3:[}}
+Mean Pet smiley.
+
+@explain{@code{d8=}}
+Your pet beaver is wearing goggles and a hard hat.
+
+@explain{@code{E-:-)}}
+User is a Ham radio operator.
+
+@explain{@code{:-9}}
+User is licking his/her lips.
+
+@explain{@code{%-6}}
+User is braindead.
+
+@explain{@code{[:-)}}
+User is wearing a walkman.
+
+@explain{@code{(:I}}
+User is an egghead.
+
+@explain{@code{<:-I}}
+User is a dunce.
+
+@explain{@code{K:P}}
+User is a little kid with a propeller beenie.
+
+@explain{@code{@@:-)}}
+User is wearing a turban.
+
+@explain{@code{:-0}}
+No Yelling!  (Quiet Lab)
+
+@explain{@code{:-:}}
+Mutant smiley; the invisible smiley.
+
+@explain{@code{.-)}}
+User only has one eye.
+
+@explain{@code{,-)}}
+Ditto...but he's winking.
+
+@explain{@code{X-(}}
+User just died.
+
+@explain{@code{8 :-)}}
+User is a wizard.
+
+@explain{@code{-=* :-)}}
+User is a TeX wizard.
+
+
+@c --------
+@node Midget Smileys
+@section Midget Smileys
+
+A lot of these can be typed without noses to make midget smileys.
+
+@explain{@code{:)}}
+Midget smiley.
+
+@explain{@code{:]}}
+Gleep...a friendly midget smiley who will gladly be your friend.
+
+@explain{@code{=)}}
+Variation on a theme...
+
+@explain{@code{:@}}}
+What should we call these? (what?)
+
+@explain{@code{:)}}
+Happy.
+
+@explain{@code{:>}}
+What?
+
+@explain{@code{:@@}}
+What?
+
+@explain{@code{:D}}
+Laughter.
+
+@explain{@code{:I}}
+Hmmm...
+
+@explain{@code{:(}}
+Sad.
+
+@explain{@code{:[}}
+Real Downer.
+
+@explain{@code{:<}}
+What?
+
+@explain{@code{:@{}}
+What?
+
+@explain{@code{:O}}
+Yelling.
+
+@explain{@code{:C}}
+What?
+
+@explain{@code{:Q}}
+What?
+
+@explain{@code{:,(}}
+Crying.
+
+@explain{@code{[]}}
+Hugs and ...
+
+@explain{@code{:*}}
+Kisses.
+
+@explain{@code{|I}}
+Asleep.
+
+@explain{@code{^o}}
+Snoring.
+
+
+@c --------
+@node Mega Smileys
+@section Mega Smileys
+
+@explain{@code{C=@}>;*@{))}}
+A drunk, devilish chef with a toupee in an updraft, a mustache, and
+a double chin.
+
+@explain{@code{@}:^#@})}}
+Updrafted bushy-mustached pointy nosed smiley with a double-chin.
+
+
+@c --------
+@node Usenet Smileys
+@section Usenet Smileys
+
+In some Usenet articles you might also find these smileys which form a certain
+``dialect'' developed and used in this most creative environment.
+
+@explain{@code{~~:-(}}
+Net.flame
+
+@explain{@code{O |-)}}
+Net.religion
+
+@explain{@code{8 :-I}}
+Net.unix-wizards
+
+@explain{@code{X-(}}
+Net.suicide
+
+@explain{@code{E-:-I}}
+Net.ham-radio
+
+
+@c --------
+@node Emotional Smileys
+@section Emotional Smileys
+
+@explain{@code{:-)}}
+ha ha
+
+@explain{@code{|-)}}
+hee hee
+
+@explain{@code{|-D}}
+ho ho
+
+@explain{@code{:->}}
+hey hey
+
+@explain{@code{:-(}}
+boo hoo
+
+@explain{@code{:-I}}
+hmmm
+
+@explain{@code{:-O}}
+oops
+
+@explain{@code{:-P}}
+nyahhhh!
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{``The man who smiles when things go wrong has thought
+of someone to blame it on.''}
+--- @b{Jone's Law}
+
+@emph{``Standing on head makes smile of frown,
+but rest of face also upside down.''}
+--- @b{Fortune cookie}
+@end flushright

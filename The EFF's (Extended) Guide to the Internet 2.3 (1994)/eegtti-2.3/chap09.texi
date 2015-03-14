@@ -1,0 +1,480 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: chap9.texi,v 2.3 1994/08/14 13:24:56 joke Rel $
+@c
+
+@c --------
+@c Up node is: Advanced E-mail
+
+@menu
+* The File is in the Mail::
+* Receiving Files::
+* Sending Files to Non-Internet Sites::
+* Getting FTP Files via E-Mail::
+* The all knowing Oracle::
+@end menu
+
+
+@c --------
+@node The File is in the Mail
+@section The File's in the Mail
+E-mail by itself is a powerful tool, and by now you may be
+sending e-mail messages all over the place.  You might even be on a
+mailing list or two. But there is a lot more to e-mail than just
+sending messages.  If your host system does not have access to ftp,
+or it doesn't have access to every ftp site on the Net, you can have
+programs and files sent right to your mailbox.  And using some simple
+techniques, you can use e-mail to send data files such as spreadsheets,
+or even whole programs, to friends and colleagues around the world.
+
+A key to both is a set of programs known as encoders and
+decoders.  For all its basic power, Net e-mail has a big problem: it
+can't handle graphics characters or the control codes found in even
+the simplest of computer programs. Encoders however, can translate
+these into forms usable in e-mail, while decoders turn them back into
+a form that you can actually use. If you are using a Unix-based host
+system, chances are it already has an encoder and decoder online that
+you can use. These programs will also let you use programs posted in
+several Usenet newsgroups, such as @news{comp.binaries.ibm.pc}.
+
+If both you and your intended recipient communicate via Unix-based
+host systems, then it's pretty easy, because almost all Unix
+host systems will have encoder/decoder programs online.
+
+First, upload the file you want to send to your friend to your
+host site.  Ask your system administrator how to upload a file to your
+name or ``home'' directory.  Then type
+
+@example
+uuencode file file >file.uu
+@end example
+@cindex UUencode
+@cindex UUdecode
+@findex uuencode
+@findex uudecode
+
+and hit enter. ``File'' is the name of the file you want to prepare for
+mailing, and yes, you have to type the name twice!  The > is a Unix
+command that tells the system to call the ``encoded'' file ``file.uu''
+(you could actually call it anything you want).
+
+Now to get it into a mail message.  The quick and dirty way is to
+type
+
+@example
+mail friend
+@end example
+
+where ``friend'' is your friend's address.  At the subject line, tell
+her the name of the enclosed file.  When you get the blank line, type
+
+@example
+~r file.uu
+@end example
+
+or whatever you called the file, and hit enter. (on some systems, the @samp{~}
+may not work; if so, ask your system administrator what to use).  This
+inserts the file into your mail message.  Hit control-D, and your file
+is on its way!
+
+On the other end, when your friend goes into his mailbox,  she
+should transfer it to her home directory.  Then your friend should
+type
+
+@example
+uudecode file.name
+@end example
+
+and hit enter.  This creates a new file in her name directory with
+whatever name you originally gave it.  She can then download it to her
+own computer.  Before she can actually use it, though, she'll have to
+open it up with a text processor and delete the mail header that has
+been ``stamped'' on it.  If you use a mailer program that automatically
+appends a ``signature,'' tell her about that so she can delete that as
+well.
+
+
+@c --------
+@node Receiving Files
+@section Receiving Files
+
+If somebody sends you a file through the mail, you'll have to go 
+through a couple of steps to get it into a form you can actually use.  If 
+you are using the simple mail program, go into mail and type 
+
+@example 
+w # file.name
+@end example
+
+where @samp{#} is the number of the message you want to transfer and 
+@file{file.name} is what you want to call the resulting file.  In pine, call 
+up the message and hit your O key and then E.  You'll then be asked 
+for a file name. In elm, call up the message and hit your S key.  
+You'll get something that looks like this: 
+
+@example
+=file.request
+@end example
+
+Type a new file name and hit enter (if you hit enter without 
+typing a file name, the message will be saved to another mail folder, 
+not your home directory). 
+
+In all three cases, exit the mail program to return to your host 
+system's command line. Because the file has been encoded for mail 
+delivery, you now have to run a decoder.  At the command line, type 
+
+@example
+uudecode file.name
+@end example
+
+where @file{file.name} is the file you created while in mail. Uudecode will 
+create a new, uncompressed binary file.  In some cases, you may have to 
+run it through some other programs (for example, if it is in ``tar'' form), 
+but generally it should now be ready for you to download to your own 
+computer (on which you might then have to run a de-compressor program 
+such as PKXZIP).
+
+
+@c --------
+@node Sending Files to Non-Internet Sites
+@section Sending Files to Non-Internet Sites
+
+What if your friend only connects with a non-Unix system, such as 
+CompuServe or MCIMail?  There are programs available for MS-DOS, Apple 
+and Amiga computers that will encode and decode files.  Of course, since 
+you can't send one of these programs to your friend via e-mail (how would 
+she un-encode it?), you'll have to mail (the old-fashioned way) or give 
+her a diskette with the program on it first.   Then, she can get the file 
+by e-mail and go through the above process (only on her own computer) to 
+get a usable file.  Remember to give her an encoder program as well, if 
+she wants to send you files in return. 
+
+For MS-DOS machines, you'll want to get uunecode.com and 
+uudecode.com.  Both can be found through anonymous ftp at 
+@host{wuarchive.wustl.edu} in the @file{/mirrors/msdos/starter} directory.
+The MS-DOS version is as easy to use as the Unix one: Just type 
+
+@example
+uudecode filename.ext
+@end example
+
+and hit enter.
+
+Mac users should get a program called uutool, which can be found 
+in the @file{info-mac/util} directory on @host{sumex-aim.stanford.edu}. 
+
+Think twice before sending somebody a giant file. Although large 
+sites connected directly to the Internet can probably handle mega-files, 
+many smaller systems cannot. Some commercial systems, such as CompuServe 
+and MCIMail, limit the size of mail messages their users can receive.  
+Fidonet doesn't even allow encoded messages.  In general, a file size of 
+30,000 or so bytes is a safe upper limit for non-Internet systems. 
+
+
+@c --------
+@node Getting FTP Files via E-Mail
+@section Getting FTP Files via E-Mail
+
+To help people without ftp access, a number of ftp sites have set up 
+mail servers (also known as archive servers) that allow you to get files 
+via e-mail.  You send a request to one of these machines and they send 
+back the file you want.  As with ftp, you'll be able to find everything 
+from historical documents to software (but please note that if you do 
+have access to ftp, that method is always quicker and ties up fewer 
+resources than using e-mail). 
+
+Some interesting or useful mail servers include:
+@table @asis
+@item @email{mail-server@@rtfm.mit.edu}
+Files of ``frequently asked questions'' related to Usenet; state-by-state
+lists of U.S. representatives and Senators and their addresses and office
+phone numbers.
+
+@item @email{archive-server@@eff.org}
+Information about the Electronic Frontier
+Foundation; documents about legal issues on the Net.
+
+@item @email{archive-server@@cs.widener.edu}
+Back copies of the Computer Underground
+Digest and every possible fact you could want to know about ``The
+Simpsons.''
+
+@item @email{netlib@@uunet.uu.net}
+Programs for many types of personal computers;
+archives of past postings from many Usenet newsgroups.
+
+@item @email{archive-server@@ames.arc.nasa.gov}
+Space-related text and graphics
+(GIF-format) files.
+
+@item @email{service@@nic.ddn.mil}
+Detailed information about Internet.
+@end table
+
+Most mail servers work pretty much the same -- you send an e-mail 
+message that tells them what file you want and how you want it sent to 
+you.  The most important command is ``send,'' which tells the computer you 
+want it to send you a particular file. 
+
+First, though, you'll need to know where the mail server stores 
+that file, because you have to tell it which directory or sub-directory
+it's in.  There are a couple of ways to do this. You can 
+send an e-mail message to the archive-server that consists of one 
+line: 
+
+@example
+index
+@end example
+
+The server will then send you a directory listing of its main, or 
+root directory.  You'll then have to send a second message to the 
+archive server with one line: 
+ 
+@example
+index directory/subdirectory
+@end example
+ 
+where that is the directory or directory path for which you want a 
+listing.  An alternative is to send an e-mail message to our old 
+friend archie, which should send you back the file's exact location on 
+the archive-server (along with similar listings for all the other 
+sites that may have the file, however)
+
+Once you have the file name and its directory path, compose a 
+message to the archive server like this:
+ 
+@example
+send directory/subdirectory/file 
+@end example
+  
+Send off the message and, anywhere from a few minutes to a couple 
+of days later, you'll find a new message in your mailbox: a copy of the 
+file you requested.  The exact time it will take a file to get to you 
+depends on a variety of factors, including how many requests are in line 
+before yours (mail servers can only process so many requests at a time) 
+and the state of the connections between the server and you. 
+
+Seems simple enough. It gets a little more complicated when you 
+request a program rather than a document.  Programs or other files that 
+contain unusual characters or lines longer than 130 characters (graphics 
+files, for example) require special processing by both the mail server 
+to ensure they are transmitted via e-mail.  Then you'll have to run them 
+through at least one converter program to put them in a form you can 
+actually use.  To ensure that a program or other ``non-mailable'' file 
+actually gets to you, include another line in your e-mail message to the 
+server: 
+                                            
+@example
+encoder                      
+@end example
+ 
+This converts the file into an encoded form.  To decode it, you'll 
+first have to transfer the file message into a file in your home 
+directory.  
+
+One further complication comes when you request a particularly 
+long file.  Many Net sites can only handle so much mail at a time.  To 
+make sure you get the entire file, tell the mail server to break it up 
+into smaller pieces, with another line in your e-mail request like 
+this: 
+ 
+@example
+size 100000
+@end example
+
+This gives the mail server the maximum size, in bytes, of each 
+file segment.  This particular size is good for UUCP sites. Internet 
+and Bitnet sites can generally go up to 300,000.  When you get all of 
+these files in mail, transfer them to your home directory.  Exit mail 
+and call up each file in your host system's text processor and delete 
+each one's entire header and footer (or ``signature'' at the end).  When 
+done with this, at your host system's command line, type 
+ 
+@example
+cat file1 file2 > bigfile
+@end example
+ 
+where file1 is the first file, file2 the second file, and so on.  The
+@samp{>} tells your host system to combine them into a new megafile called 
+bigfile (or whatever you want to call it).  After you save the file to 
+your home directory (@pxref{Receiving Files} above), you can then run uudecode, 
+tar, etc. One word of caution, though: if the file you want is long 
+enough that it has to be broken into pieces, think of how much time it's 
+going to take you to download the whole thing -- especially if you're 
+using a 2400-baud modem! 
+
+There are a number of other mail servers.  To get a list, send an 
+e-mail message to:
+
+@email{mail-server@@rtfm.mit.edu}
+ 
+@example
+send usenet/comp.sources.wanted/How_to_find_sources_(READ_THIS_BEFORE_POSTING)
+@end example
+ 
+You'll have to spell it exactly as listed above.  Some mail 
+servers use different software, which will require slightly different 
+commands than the ones listed here.  In general, if you send a message 
+to a mail server that says only 
+ 
+@example
+help
+@end example
+ 
+you should get back a file detailing all of its commands. 
+
+But what if the file you want is not on one of these mail 
+servers?  That's where ftpmail comes in.  Run by Digital Equipment 
+Corp. in California, this service can connect to almost any ftp site 
+in the world, get the file you want and then mail it to you. Using it 
+is fairly simple -- you send an e-mail message to ftpmail that 
+includes a series of commands telling the system where to find the 
+file you want and how to format it to mail to you. 
+@findex ftpmail
+@cindex FTP, mail by
+@cindex DEC, Digital Equipment Corp.
+
+Compose an e-mail message to
+ 
+@example
+ftpmail@@decwrl.dec.com
+@end example
+ 
+Leave the ``subject:'' line blank.  Inside the message, there are 
+several commands you can give.  The first line should be 
+ 
+@example
+reply address
+@end example
+ 
+where ``address'' is your e-mail address. The next line should be 
+ 
+@example
+connect host
+@end example
+ 
+where ``host'' is the system that has the file you want (for example: 
+@host{wuarchive.wustl.edu}). Other commands you should consider using are 
+``binary'' (required for program files); ``compress'' (reduces the file 
+size for quicker transmission) and ``uuencode'' (which encodes the file 
+so you can do something with it when it arrives).  The last line of 
+your message should be the word ``quit''.  
+
+Let's say you want a copy of the U.S. constitution.  Using archie, 
+you've found a file called, surprise, constitution, at the ftp site 
+@host{archive.cis.ohio-state.edu}, in the @file{/pub/firearms/politics/ rkba} 
+directory. You'd send a message to @email{ftpmail@@decwrl.dec.com} that looks 
+like this: 
+ 
+@example
+reply adamg@@world.std.com
+connect archive.cis.ohio-state.edu
+binary
+compress
+uuencode
+get pub/firearms/politics/rkba/constitution
+quit
+@end example
+ 
+When you get the file in your mailbox, use the above procedure 
+for copying it to a file.  Run it through uudecode.  Then type 
+ 
+@example
+uncompress file.name
+@end example
+ 
+to make it usable.
+
+Since this was a text file, you could have changed the ``binary'' to 
+``ascii'' and then eliminated the ``uuencode'' file.  For programs, though, 
+you'll want to keep these lines.  One caveat with ftpmail: it has become 
+such a popular service that it could take a week or more for your 
+requested files to arrive.
+
+We therefore strongly encourage you to ``distribute'' your requests over
+the currently known ``ftpmail'' sites:
+
+@table @asis
+@item USA:
+@email{ftpmail@@decwrl.dec.com}
+@item
+@email{ftpmail@@sunsite.unc.edu}
+@item
+@email{bitftp@@pucc.princeton.edu}
+
+@item Germany:
+@email{bitftp@@dearn} or @email{bitftp@@vm.gmd.de} (Europe only)
+@item
+@email{ftpmail@@ftp.uni-stuttgart.de}
+@item
+@email{ftpmail@@ftp.inf.tu-dresden.de}
+
+@item France:
+@email{ftpmail@@grasp.insa-lyon.fr}
+
+@item Poland:
+@email{bitftp@@plearn.edu.pl} or @email{bitftp@@plearn} (Europe)
+
+@item United Kingdom:
+@email{ftpmail@@doc.ic.ak.uk}
+@end table
+
+
+@c --------
+@node The all knowing Oracle
+@section The all knowing Oracle
+
+One other thing you can do through e-mail is consult with the
+Usenet Oracle.  You can ask the Oracle anything at all and get back an
+answer (whether you like the answer is another question).
+
+First, you'll want to get instructions on how to address the Oracle 
+(he, or she, or it, is very particular about such things and likes being 
+addressed in august, solemn and particularly sycophantic tones).  Start 
+an e-mail message to 
+@cindex Oracle
+
+@example
+oracle@@iuvax.cs.indiana.edu
+@end example
+
+In the ``Subject:'' line, type
+
+@example
+help
+@end example
+
+and hit enter.  You don't actually have to say anything in the message 
+itself -- at least not yet.  Hit control-D to send off your request 
+for help.  Within a few hours, the Oracle will mail you back detailed 
+instructions.  It's a fairly long file, so before you start reading 
+it, turn on your communications software's logging function, to save 
+it to your computer (or save the message to a file on your host system's 
+home directory and then download the file).  After you've digested it, 
+you can compose your question to the Oracle.  Mail it to the above 
+address, only this time with a subject line that describes your 
+question.  Expect an answer within a couple of days. And don't be 
+surprised if you also find a question in your mailbox -- the Oracle 
+extracts payment by making seekers of knowledge answer questions as 
+well!
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{``If just one piece of mail gets lost, well, they'll just think they
+forgot to send it.  But if *two* pieces of mail get lost, hell, they'll
+just think the other guy hasn't gotten around to answering his mail.
+And if *fifty* pieces of mail get lost, can you imagine it, if *fifty*
+pieces of mail get lost, why they'll think someone *else* is broken!
+And if 1GB of mail gets lost, they'll just *know* that Arpa is down and
+think it's a conspiracy to keep them from their God given right to receive Net Mail ...''}
+--- @b{Leith `Casey' Leedom}
+@end flushright

@@ -1,0 +1,55 @@
+/*	
+ *	PostScript Texinfo fonts Palatino family
+ *	$Id: cm.fonts,v 1.1 1994/01/08 21:21:27 joke Exp $
+ */	
+
+#define __THE_FONT_FAMILY__		Palatino
+
+#define __TEXT_ROMAN__			pplr at 12pt
+#define __TEXT_TYPEWRITER__		pcrr at 12pt
+#define __TEXT_ROMAN_SMALL__		pplr at 11pt
+#define __TEXT_TYPEWRITER_SMALL__	pcrr at 11pt
+#define __TEXT_BOLD__			pplb at 11 pt
+#define __TEXT_ITALICS__		pplro at 11 pt
+#define __TEXT_SLANT__			pplri at 11 pt
+#define __TEXT_SANSERIF__		phvr at 10 pt
+#define __TEXT_SMALLCAPS__		pplrc at 11 pt
+#define __TEXT_MATH_ITALICS__		cmmi10 scaled \mainmagstep
+#define __TEXT_SYMBOLS__		cmsy10 scaled \mainmagstep
+#define __DEFUN_BOLD__			pplb at 12pt
+#define __DEFUN_TYPEWRITER__		pcrr at 12pt
+#define __EXAMPLE_SMALL__		pcrr at 9pt
+#define __INDEX_ROMAN__			pplr at 9pt
+#define __INDEX_ITALICS__		pplri at 9pt
+#define __INDEX_MATH_ITALICS__		cmmi9
+#define __INDEX_SYMBOLS__		cmsy9
+#define __CHAPTER_ROMAN__		pplb at 17.28pt
+#define __CHAPTER_ITALICS__		pplro at 17.28pt
+#define __CHAPTER_SLANT__		pplri at 17.28pt
+#define __CHAPTER_TYPEWRITER__		pcrr at 17.28pt
+#define __CHAPTER_SANSERIF__		phvr at 16pt
+#define __CHAPTER_SMALLCAPS__		pplrc at 17.28pt
+#define __CHAPTER_MATH_ITALICS__	cmmi12 scaled \magstep2
+#define __CHAPTER_SYMBOL__		cmsy10 scaled \magstep3
+#define __SECTION_ROMAN__		pplb at 14.4pt
+#define __SECTION_ITALICS__		pplro at 14.4pt
+#define __SECTION_SLANT__		pplri at 14.4pt
+#define __SECTION_TYPEWRITER__		pcrr at 14.4pt
+#define __SECTION_SANSERIF__		phvr at 14.4pt
+#define __SECTION_BOLD__		pplb at 14.4pt
+#define __SECTION_SMALLCAPS__		pplrc at 14.4pt
+#define __SECTION_MATH_ITALICS__	cmmi12 scaled \magstep1
+#define __SECTION_SYMBOLS__		cmsy10 scaled \magstep2
+#define __SUBSECTION_ROMAN__		pplb at 12.5pt
+#define __SUBSECTION_ITALICS__		pplro at 12.5pt
+#define __SUBSECTION_SLANT__		pplri at 12.5pt
+#define __SUBSECTION_TYPEWRITER__	pcrr at 12.5pt
+#define __SUBSECTION_SANSERIF__		phvr at 12.5pt
+#define __SUBSECTION_BOLD__		pplb at 12.5pt
+#define __SUBSECTION_SMALLCAPS__	pplrc at 12.5pt
+#define __SUBSECTION_MATH_ITALICS__	cmmi12 scaled \magstephalf
+#define __SUBSECTION_SYMBOLS__		cmsy10 scaled \magstep1
+#define __TITLE_ROMAN__			pplb at 20.76pt
+#define __TOC_ROMAN__			pplr at 12pt
+#define __TOC_BOLD__			pplb at 12pt
+#define __TOC_SLANT__			pplri at 12pt

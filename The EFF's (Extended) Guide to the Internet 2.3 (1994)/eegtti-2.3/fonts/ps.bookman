@@ -1,0 +1,55 @@
+/*	
+ *	PostScript Texinfo fonts Bookman family
+ *	$Id: cm.fonts,v 1.1 1994/01/08 21:21:27 joke Exp $
+ */	
+
+#define __THE_FONT_FAMILY__		Bookman
+
+#define __TEXT_ROMAN__			pbkl at 12pt
+#define __TEXT_TYPEWRITER__		pcrr at 12pt
+#define __TEXT_ROMAN_SMALL__		pbkl at 11pt
+#define __TEXT_TYPEWRITER_SMALL__	pcrr at 11pt
+#define __TEXT_BOLD__			pbkd at 11 pt
+#define __TEXT_ITALICS__		pbkli at 11 pt
+#define __TEXT_SLANT__			pbkli at 11 pt
+#define __TEXT_SANSERIF__		phvr at 10 pt
+#define __TEXT_SMALLCAPS__		pbklc at 11 pt
+#define __TEXT_MATH_ITALICS__		cmmi10 scaled \mainmagstep
+#define __TEXT_SYMBOLS__		cmsy10 scaled \mainmagstep
+#define __DEFUN_BOLD__			pbkd at 12pt
+#define __DEFUN_TYPEWRITER__		pcrr at 12pt
+#define __EXAMPLE_SMALL__		pcrr at 9pt
+#define __INDEX_ROMAN__			pbkl at 9pt
+#define __INDEX_ITALICS__		pbkli at 9pt
+#define __INDEX_MATH_ITALICS__		cmmi9
+#define __INDEX_SYMBOLS__		cmsy9
+#define __CHAPTER_ROMAN__		pbkd at 17.28pt
+#define __CHAPTER_ITALICS__		pbkli at 17.28pt
+#define __CHAPTER_SLANT__		pbkli at 17.28pt
+#define __CHAPTER_TYPEWRITER__		pcrr at 17.28pt
+#define __CHAPTER_SANSERIF__		phvr at 16pt
+#define __CHAPTER_SMALLCAPS__		pbklc at 17.28pt
+#define __CHAPTER_MATH_ITALICS__	cmmi12 scaled \magstep2
+#define __CHAPTER_SYMBOL__		cmsy10 scaled \magstep3
+#define __SECTION_ROMAN__		pbkd at 14.4pt
+#define __SECTION_ITALICS__		pbkli at 14.4pt
+#define __SECTION_SLANT__		pbkli at 14.4pt
+#define __SECTION_TYPEWRITER__		pcrr at 14.4pt
+#define __SECTION_SANSERIF__		phvr at 14.4pt
+#define __SECTION_BOLD__		pbkd at 14.4pt
+#define __SECTION_SMALLCAPS__		pbklc at 14.4pt
+#define __SECTION_MATH_ITALICS__	cmmi12 scaled \magstep1
+#define __SECTION_SYMBOLS__		cmsy10 scaled \magstep2
+#define __SUBSECTION_ROMAN__		pbkd at 12.5pt
+#define __SUBSECTION_ITALICS__		pbkli at 12.5pt
+#define __SUBSECTION_SLANT__		pbkli at 12.5pt
+#define __SUBSECTION_TYPEWRITER__	pcrr at 12.5pt
+#define __SUBSECTION_SANSERIF__		phvr at 12.5pt
+#define __SUBSECTION_BOLD__		pbkd at 12.5pt
+#define __SUBSECTION_SMALLCAPS__	pbklc at 12.5pt
+#define __SUBSECTION_MATH_ITALICS__	cmmi12 scaled \magstephalf
+#define __SUBSECTION_SYMBOLS__		cmsy10 scaled \magstep1
+#define __TITLE_ROMAN__			pbkd at 20.76pt
+#define __TOC_ROMAN__			pbkl at 12pt
+#define __TOC_BOLD__			pbkd at 12pt
+#define __TOC_SLANT__			pbkli at 12pt

@@ -1,0 +1,725 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: chap4.texi,v 2.3 1994/08/14 13:24:52 joke Rel $
+@c
+
+@c --------
+@c Up node is: from Flames Wars to Killfiles
+
+@menu
+* Flame and Blather and Spew::		What's an asbestos suit?
+* Killfiles::				The Cure for what ails you. 
+* Some Usenet hints::			Things you shouldn't do.
+* Brain-tumor Boy and Modem Tax::	Two very old evergreens.
+* Big Sig::				Not for ASCII artists, only.
+* Local Ordinance::			How to keep your feet on the floor.
+* Usenet History::			Short look in the back mirror.
+* When things go wrong III::		Third part of the serial.
+* Usenet FYI::				Suggested further reading.
+@end menu
+
+
+@c --------
+@node Flame and Blather and Spew
+@section Flame, Blather and Spew
+
+Something about online communications seems to make some people
+particularly irritable.  Perhaps it's the immediacy and semi-anonymity
+of it all.  Whatever it is, there are whole classes of people you will
+soon think seem to exist to make you miserable.
+
+Rather than pausing and reflecting on a message as one might do
+with a letter received on paper, it's just so easy to hit your R key
+and tell somebody you don't really know what you really think of them.
+Even otherwise calm people sometimes find themselves turning into
+raving lunatics.  When this happens, flames erupt.  
+
+A flame is a particularly nasty, personal attack on somebody for 
+something he or she has written.  Periodically, an exchange of flames 
+erupts into a flame war that begin to take up all the space in a given 
+newsgroup (and sometimes several; flamers like cross-posting to let the 
+world know how they feel).  These can go on for weeks (sometimes they go 
+on for years, in which case they become ``holy wars,'' usually on such 
+topics as the relative merits of Macintoshes and IBMs).  Often, just when 
+they're dying down, somebody new to the flame war reads all the messages, 
+gets upset and issues an urgent plea that the flame war be taken to e-mail
+so everybody else can get back to whatever the newsgroup's business 
+is.  All this usually does, though, is start a brand new flame war, in 
+which this poor person comes under attack for daring to question the 
+First Amendment, prompting others to jump on the attackers for impugning 
+this poor soul...  You get the idea. 
+@cindex Macintosh
+@cindex IBM
+@cindex International Business Machines, Corp.
+@cindex Holy war
+@cindex Flame war
+
+Every so often, a discussion gets so out of hand that somebody
+predicts that either the government will catch on and shut the whole
+thing down or somebody will sue to close down the network, or maybe
+even the wrath of God will smote everybody involved.  This brings what
+has become an inevitable rejoinder from others who realize that the
+network is, in fact, a resilient creature that will not die easily:
+@emph{``Imminent death of Usenet predicted. Film at 11.''}
+
+Flame wars can be tremendously fun to watch at first.  They
+quickly grow boring, though.  And wait until the first time you're
+attacked!
+
+@emph{Flamers} are not the only @b{Net.characters} to watch out for.
+@cindex Net.character
+@cindex Flame
+@cindex Flamer
+
+@emph{Spewers} assume that whatever they are particularly concerned about
+either really is of universal interest or should be rammed down the
+throats of people who don't seem to care -- as frequently as possible.
+@cindex Spewer
+
+You can usually tell a spewer's work by the number of articles he posts 
+in a day on the same subject and the number of newsgroups to which he 
+then sends these articles -- both can reach well into double digits. 
+Often, these messages relate to various ethnic conflicts around the 
+world. Frequently, there is no conceivable connection between the issue 
+at hand and most of the newsgroups to which he posts.  No matter.  If you 
+try to point this out in a response to one of these messages, you will be 
+inundated with angry messages that either accuse you of being an 
+insensitive racist/American/whatever or ignore your point entirely to
+bring up several hundred more lines of commentary on the perfidy of
+whoever it is the spewer thinks is out to destroy his people.
+
+Closely related to these folks are the Holocaust revisionists, who
+periodically inundate certain groups (such as @news{soc.history}) with long
+rants about how the Holocaust never really happened.  Some people
+attempt to refute these people with facts, but others realize this only
+encourages them.
+@cindex Holocaust
+
+@emph{Blatherers} tend to be more benign.  Their problem is that they
+just can't get to the point -- they can wring three or four screenfuls
+out of a thought that others might sum up in a sentence or two.  A
+related condition is excessive quoting.  People afflicted with this will
+include an entire message in their reply rather than excising the
+portions not relevant to whatever point they're trying to make.  The
+worst quote a long message and then add a single line:
+@cindex Blatherer
+
+``I agree!'' or some such, often followed by a monster .signature
+(@pxref{Big Sig}).
+There are a number of other Usenet denizens you'll soon come to
+recognize.  Among them:
+
+@table @asis
+@item @b{Net.weenies}
+@cindex Net.weenie
+These are the kind of people who enjoy Insulting
+others, the kind of people who post nasty messages in a sewing
+newsgroup just for the hell of it.
+
+@item @b{Net.geeks}
+@cindex Net.geek
+People to whom the Net is Life, who worry about what
+happens when they graduate and they lose their free, 24-hour access.
+
+@item @b{Net.gods}
+@cindex Net.god
+The old-timers; the true titans of the Net and the
+keepers of its collective history. They were around when the Net
+consisted of a couple of computers tied together with baling wire.
+
+@item @b{Lurkers}
+@cindex Lurker
+Actually, you can't tell these people are there, but
+they are.  They're the folks who read a newsgroup but never post or
+respond.
+
+@item @b{Wizards}
+@cindex Wizard
+People who know a particular Net-related topic inside
+and out.  Unix wizards can perform amazing tricks with that operating
+system, for example.
+
+@item @b{Net.saints}
+@cindex Net.saint
+Always willing to help a newcomer, eager to share
+their knowledge with those not born with an innate ability to navigate
+the Net, they are not as rare as you might think.  Post a question
+about something and you'll often be surprised how many responses you
+get.
+@end table
+
+The last group brings us back to the Net's oral tradition.  With
+few written guides, people have traditionally learned their way around
+the Net by asking somebody, whether at the terminal next to them or on
+the Net itself.  That tradition continues: if you have a question, ask.
+
+Today, one of the places you can look for help is in the
+@news{news.newusers.questions} newsgroup, which, as its name suggests, is a
+place to learn more about Usenet.  But be careful what you post.  Some
+of the Usenet wizards there get cranky sometimes when they have to
+answer the same question over and over again. Oh, they'll eventually
+answer your question, but not before they tell you should have 
+asked your host system administrator first or looked at the postings in
+@news{news.announce.newusers}.
+
+
+@c --------
+@node Killfiles
+@section Killfiles -- The cure for all that ails you
+
+As you keep reading Usenet, you are going to run across things or
+people that really drive you nuts -- or that you just get tired of
+seeing.
+
+Killfiles are just the thing for you. When you start your
+newsreader, it checks to see if you have any lists of words, phrases
+or names you don't want to see.  If you do, then it blanks out any
+messages containing those words.
+@cindex Killfile
+
+Such as cascades.
+@cindex Cascade
+@cindex Cascaders
+
+As you saw earlier, when you post a reply to a message and
+include parts of that message, the original lines show up with a > in
+front of them.  Well, what if you reply to a reply?  Then you get a >>
+in front of the line.  And if you reply to that reply? You get >>>.
+Keep this up, and soon you get a triangle of >'s building up in your
+message.
+
+There are people who like building up these triangles, or
+cascades.  They'll ``respond'' to your message by deleting everything
+you've said, leaving only the ``In message 123435, you said:'' part and
+the last line of your message, to which they add a nonsensical 
+retort.  On and on they go until the triangle has reached the right
+end of the page. Then they try to expand the triangle by deleting one
+with each new line. Whoever gets to finish this mega-triangle wins.
+
+There is even a newsgroup just for such folks: alt.cascade.
+Unfortunately, cascaders would generally rather cascade in other
+newsgroups. Because it takes a lot of messages to build up a completed
+cascade, the targeted newsgroup soon fills up with these messages. Of
+course, if you complain, you'll be bombarded with messages about the
+First Amendment and artistic expression -- or worse, with another
+cascade. The only thing you can do is ignore them, by setting up a
+killfile.
+
+There are also certain newsgroups where killfiles will come in
+handy because of the way the newsgroups are organized.  For example, readers of
+@news{rec.arts.tv.soaps} always use an acronym in their ``Subject:'' line for
+the show they're writing about (AMC, for example, for ``All My
+Children'').  This way, people who only want to read about ``One Life to
+Live'' can blank out all the messages about ``The Young and the
+Restless'' and all the others (to keep people from accidentally
+screening out messages that might contain the letters ``gh'' in them,
+``General Hospital'' viewers always use ``gh:'' in their subject lines).
+
+Both nn and rn let you create killfiles, but in different ways.
+
+To create a killfile in nn, go into the newsgroup with the
+offending messages and type a capital @samp{K}.  You'll see this at the
+bottom of your screen:
+
+@example
+AUTO (k)ill or (s)elect (CR => Kill subject 30 days)
+@end example
+
+If you hit return, nn will ask you which article's subject you're
+tired of. Chose one and the article and any follow-ups will disappear,
+and you won't see them again for 30 days.
+If you type a lower-case @samp{k} instead, you'll get this:
+
+@example
+AUTO KILL on (s)ubject or (n)ame  (s)
+@end example
+
+If you hit your @samp{S} key or just enter,  you'll see this:
+
+@example
+KILL Subject: (=/)
+@end example
+
+Type in the name of the offending word or phrase and hit enter.
+You'll then be prompted:
+
+@example
+KILL in (g)roup 'eff.test' or in (a)ll groups  (g)
+@end example
+
+except that the name of the group you see will be the one you're
+actually in at the moment.  Because cascaders and other annoying
+people often cross-post their messages to a wide range of newsgroups,
+you might consider hitting @samp{a} instead of @samp{g}.  Next comes:
+
+@example
+Lifetime of entry in days (p)ermanent  (30)
+@end example
+
+The P key will screen out the offending articles forever, while
+hitting enter will do it for 30 days.  You can also type in a number
+of days for the blocking.
+
+Creating killfiles in rn works differently -- its default
+killfile generator only works for messages in specific groups, rather
+than globally for your entire newsgroup list.  To create a global
+killfile, you'll have to write one yourself.
+
+To create a killfile in rn, go into the newsgroup where the
+offending messages are and type in its number so you get it on your
+screen. Type a capital @samp{K}.  From now on, any message with that subject
+line will disappear before you read the group. You should probably
+choose a reply, rather than the original message, so that you will get
+all of the followups (the original message won't have a ``Re: `` in its
+subject line). The next time you call up that newsgroup, rn will tell
+you it's killing messages. When it's done, hit the space bar to go
+back into reading mode.
+
+To create a ``global'' kill file that will automatically wipe out
+articles in all groups you read, start rn and type control-K.  This
+will start your whatever text editor you have as your default on your
+host system and create a file (called @file{KILL}, in your @file{News}
+subdirectory).
+
+On the first line, you'll type in the word, phrase or name you
+don't want to see, followed by commands that tell rn whether to search
+an entire message for the word or name and then what to do when it
+finds it.
+
+Each line must be in this form
+
+@example
+/pattern/modifier:j
+@end example
+
+``Pattern'' is the word or phrase you want rn to look for.  It's
+case-insensitive: both ``test'' and ``Test'' will be knocked out.  The
+modifier tells rn whether to limit its search to message headers
+(which can be useful when the object is to never see messages from a
+particular person):
+
+@table @code
+@item a:
+Looks through an entire message
+
+@item h:
+Looks just at the header
+@end table
+
+You can leave out the modifier command, in which case rn will
+only look at the subject line of messages. The @samp{j} at the end tells rn
+to screen out all articles with the offending word.
+
+So if you never want to see the word ``foo'' in any header, ever again,
+type this:
+
+@example
+/foo/h:j
+@end example
+@findex /foo/h:j
+
+This is particularly useful for getting rid of articles from
+people who post in more than one newsgroup, such as cascaders, since
+an article's newsgroup name is always in the header.
+
+If you just want to block messages with a subject line about
+cascades, you could try:
+
+@example
+/foo/:j
+@end example
+@findex /foo/:j
+
+To kill anything that is a followup to any article, use this
+pattern:
+
+@example
+/Subject: *Re:/:j
+@end example
+@findex /Subject: *Re:/:j
+
+When done writing lines for each phrase to screen, exit the text
+editor as you normally would, and you'll be put back in rn.
+
+One word of caution: go easy on the global killfile.  An
+extensive global killfile, or one that makes frequent use of the @samp{a:}
+modifier can dramatically slow down rn, since the system will now have
+to look at every single word in every single message in all the
+newsgroups you want to read.
+
+If there's a particular person whose posts you never want to see
+again, first find his or address (which will be in the ``from:'' line of
+his postings) and then write a line in your killfile like this:
+
+@example
+/From: *name@@address\.all/h:j
+@end example
+@findex /From: *name@@address\.all/h:j
+
+
+@c --------
+@node Some Usenet hints
+@section Some Usenet hints
+
+Case counts in Unix -- most of the time.  Many Unix commands,
+including many of those used for reading Usenet articles, are case
+sensitive.  Hit a @samp{d} when you meant a @samp{D} and either nothing will
+happen,
+or something completely different from what you expected will happen.
+So watch that case!
+
+In nn, you can get help most of the time by typing a question mark
+(the exception is when you are writing your own message, because then
+you are inside the text-processing program).  In rn, type a lower-case @samp{h}
+at any prompt to get some online help.
+
+When you're searching for a particular newsgroup, whether through
+the l command in rn or with nngrep for nn, you sometimes may have to
+try several keywords.  For example, there is a newsgroup dedicated to
+the @var{Grateful Dead}, but you'd never find it if you tried, say,
+@samp{l grateful dead}, because the name is @news{rec.music.gdead}.
+In general, try the smallest
+possible part of the word or discussion you're looking for, for example,
+use ``trek'' to find newsgroups about ``Star Trek.''  If one word doesn't
+produce anything, try another.
+@cindex Greatful Dead
+@cindex Star Trek
+
+
+@c --------
+@node Brain-tumor Boy and Modem Tax
+@section The Brain-tumor Boy and the Modem Tax an the Chain Letter
+@menu
+* Craig Shergold::
+* The Modem Tax::
+* The Chain Letter::
+@end menu
+
+Net users sometimes like to think they are smarter or somehow better
+than everybody else.  They're not.  If they were, nobody on the Net would
+ever have heard of Craig Shergold, the Brain-Tumor Boy, or the evil FCC's
+plan to tax your modem. And you wouldn't keep seeing the same dumb chain 
+letter. Alas, all of these are here to stay.  Just when they seem to have 
+died off, somebody posts a message about one or the other, starting a whole 
+new round of flame wars on the subject. 
+For the record, here are the stories then: 
+
+@c --------
+@node Craig Shergold
+@subsection Craig Shergold
+
+There once was a seven-year-old boy in England named Craig
+Shergold who was diagnosed with a seemingly incurable brain tumor.  As
+he lay dying, he wished only to have friends send him postcards.  The
+local newspapers got a hold of the tear-jerking story.  Soon, the boy's 
+wish had changed: he now wanted to get into the Guinness Book of World
+Records for the largest postcard collection.  Word spread around the
+world. People by the millions sent him postcards.
+@cindex Shergold, Craig
+
+Miraculously, the boy lived.  An American billionaire even flew
+him to the U.S. for surgery to remove what remained of the tumor.  And
+his wish succeeded beyond his wildest dreams -- he made the Guinness
+Book of World Records.
+
+But with Craig now well into his teens, his dream has turned into
+a nightmare for the post office in the small town outside London where
+he lives.  Like Craig himself, his request for cards just refuses to
+die, inundating the post office with millions of cards every year.
+Just when it seems like the flow is slowing, along comes somebody else
+who starts up a whole new slew of requests for people to send Craig
+post cards (or greeting cards or business cards -- Craig letters have
+truly taken on a life of their own and begun to mutate). Even Dear Abby
+has asked people to stop!
+
+What does any of this have to do with the Net? The Craig letter
+seems to pop up on Usenet as often as it does on cork boards at major 
+corporations.  No matter how many times somebody like Gene Spafford
+posts periodic messages to ignore them or spend your money on something
+more sensible (a donation to the local Red Cross, say), somebody
+manages to post a letter asking readers to send cards to poor little
+Craig.
+
+@c --------
+@node The Modem Tax
+@subsection The Modem Tax
+
+In 1987, the Federal Communications Commission considered removing
+a tax break it had granted CompuServe and other large commercial
+computer networks for use of the national phone system.  The FCC
+quickly reconsidered after alarmed users of bulletin-board systems
+bombarded it with complaints about this ``modem tax.'' 
+@cindex FCC
+@cindex Federal Communications Commission
+@cindex Modem tax
+
+Now, every couple of months, somebody posts an ``urgent'' message
+warning Net users that the FCC is about to impose a modem tax.  This is
+NOT true.  The way you can tell if you're dealing with the hoax story
+is simple: it ALWAYS mentions an incident in which a talk-show host on
+KGO radio in San Francisco becomes outraged on the air when he reads a
+story about the tax in the New York Times.
+
+Another way to tell it's not true is that it never mentions a
+specific FCC docket number or closing date for comments.
+Save that letter to your congressman for something else.
+
+@c --------
+@node The Chain Letter
+@subsection The Chain Letter
+Sooner or later, you're going to run into a message titled ``Make Money 
+Fast.''  It's your basic chain letter.  The Usenet version is always about 
+some guy named Dave Rhodes who was on the verge of death, or something, 
+when he discovered a perfectly legal way to make tons of money -- by 
+posting a chain letter on computer systems around the world. Yeah, right.
+@cindex Chain letter
+
+
+@c --------
+@node Big Sig
+@section Big Sig
+
+There are .sigs and there are .sigs.  Many people put only bare-bones 
+information in their .sig files -- their names and e-mail addresses,
+perhaps their phone numbers.  Others add a quotation they think is funny or
+profound and a disclaimer that their views are not those of their employer.
+Still others add some ASCII-art graphics.  And then there are
+those who go totally berserk, posting huge creations with multiple quotes,
+hideous ASCII ``barfics'' and more e-mail addresses than anybody could
+humanly need.  College freshmen unleashed on the Net seem to excel at
+these.   You can see the best of the worst in the @news{alt.fan.warlord}
+newsgroup, which exists solely to critique .sigs that go too far, such as:
+@cindex .sig file
+@cindex .signature file
+
+@example
+___________________________________________________________________________
+|#########################################################################|
+|#|                                                                     |#|
+|#|   *****  *    *  *****    *   *  *****  *****  *****                |#|
+|#|     *    *    *  *        ** **  *      *      *   *                |#|
+|#|     *    ******  ***      * * *  ***    *  **  *****   *****        |#|
+|#|     *    *    *  *        *   *  *      *   *  *   *                |#|
+|#|     *    *    *  *****    *   *  *****  *****  *   *                |#|
+|#|                                                                     |#|
+|#|   ****   *****  *****         *****  *****  *****    *****  *****   |#|
+|#|   *  **    *    *             *        *    *        *      *   *   |#|
+|#|   ****     *    *  **         *****    *    *  **    *      *   *   |#|
+|#|   *  **    *    *   *     **      *    *    *   *    *      *   *   |#|
+|#|   ****   *****  *****     **  *****  *****  *****    *****  *****   |#|
+|#|                                                                     |#|
+|#|            T-H-E  M-E-G-A  B-I-G  .S-I-G  C-O-M-P-A-N-Y             |#|
+|#|                  ~-----------------------------~                    |#|
+|#|  "Annoying people with huge net.signatures for over 20 years..."    |#|
+|#|                                                                     |#|
+|#|---------------------------------------------------------------------|#|
+|#| "The difference between a net.idiot and a bucket of shit is that at |#|
+|#|  least a bucket can be emptied.  Let me further illustrate my point |#|
+|#|  by comparing these charts here. (pulls out charts)  Here we have a |#|
+|#|  user who not only flames people who don't agree with his narrow-   |#|
+|#|  minded drivel, but he has this huge signature that takes up many   |#|
+|#|  pages with useless quotes.  This also makes reading his frequented |#|
+|#|  newsgroups a torture akin to having at 300 baud modem on a VAX. I  |#|
+|#|  might also add that his contribution to society rivals only toxic  |#|
+|#|  dump sites."                                                       |#|
+|#|                     -- Robert A. Dumpstik, Jr                       |#|
+|#|                        President of The Mega Big Sig Company        |#|
+|#|                        September 13th, 1990 at 4:15pm               |#|
+|#|                        During his speech at the "Net.abusers        |#|
+|#|                        Society Luncheon" during the                 |#|
+|#|                        "1990 Net.idiots Annual Convention"          |#|
+|#|_____________________________________________________________________|#|
+|#|                                                                     |#|
+|#| Thomas Babbit, III: 5th Assistant to the Vice President of Sales    |#|
+|#|      __                                                             |#|
+|#|  ==========    ______             Digital Widget Manufacturing Co.  |#|
+|#|         \\     /                  1147 Complex Incorporated Drive   |#|
+|#|        )-=======                  Suite 215                         |#|
+|#|                                   Nostromo, VA 22550-1147           |#|
+|#| #NC-17 Enterpoop Ship :)          Phone # 804-844-2525              |#|
+|#|    ----------------               Fax # 804-411-1115                |#|
+|#| "Shut up, Wesley!"                Online Service # 804-411-1100     |#|
+|#|                  -- Me            at 300-2400, and now 9600 baud!   |#|
+|#|                                   PUNet: tbabb!digwig!nostromo      |#|
+|#| Home address:                     InterNet: dvader@@imperial.emp.com |#|
+|#| Thomas Babbit, III                Prodigy: Still awaiting author-   |#|
+|#| 104 Luzyer Way                             ization                  |#|
+|#| Sulaco, VA 22545                  "Manufacturing educational widget |#|
+|#| Phone # 804-555-1524               design for over 3 years..."      |#|
+|#|=====================================================================|#|
+|#|                                                                     |#|
+|#|  Introducing:                                                       |#|
+|#|                                 ______                              |#|
+|#|  The  |\  /|                         /                              |#|
+|#|       | \/ |                        /                               |#|
+|#|       |    |                       /                                |#|
+|#|       |    |                      /                                 |#|
+|#|       |    | ETELHED             /_____ ONE                         |#|
+|#|'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'`'|#|
+|#| 50Megs Online!  The k00l BBS for rad teens!  Lots of games and many |#|
+|#| bases for kul topix!  Call now and be validated to the Metelhed Zone|#|
+|#|                      -- 804-555-8500 --                             |#|
+|#|\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\V/////////////////////////////////////|#|
+|#| "This is the end, my friend..."      -- The Doors                   |#|
+|#########################################################################|
+---------------------------------------------------------------------------
+Hit ``b'' to continue
+
+Hahahha... fooled u!
+@end example
+
+
+@c --------
+@node Local Ordinance
+@section The First Amendment as Local Ordinance
+
+Usenet's international reach raises interesting legal questions that
+have yet to be fully resolved.  Can a discussion or posting that is legal
+in one country be transmitted to a country where it is against the law?
+Does the posting even become illegal when it reaches the border?  And what
+if that country is the only path to a third country where the message is
+legal as well?  Several foreign colleges and other institutions have
+cut off feeds of certain newsgroups where Americans post what is, in
+the U.S., perfectly legal discussions of drugs or alternative sexual
+practices.  Even in the U.S., some universities have discontinued
+certain newsgroups their administrators find offensive, again, usually
+in the @news{alt.*} hierarchy.
+
+
+@c --------
+@node Usenet History
+@section Usenet History
+
+In the late 1970s, Unix developers came up with a new feature: a
+system to allow Unix computers to exchange data over phone lines.
+
+In 1979, two graduate students at Duke University in North
+Carolina, @var{Tom Truscott} and @var{Jim Ellis}, came up with the idea
+of using
+this system, known as UUCP (for Unix-to-Unix CoPy), to distribute
+information of interest to people in the Unix community.  Along with
+@var{Steve Bellovin}, a graduate student at the University of North Carolina
+and @var{Steve Daniel}, they wrote conferencing software and linked together
+computers at Duke and UNC.
+@cindex UUCP
+@cindex Truscott, Tom
+@cindex Ellis, Jim
+@cindex Bellovin, Steve
+@cindex Daniel, Steve
+
+Word quickly spread and by 1981, a graduate student at Berkeley,
+@var{Mark Horton} and a nearby high school student, @var{Matt Glickman}, had
+released a new version that added more features and was able to handle
+larger volumes of postings -- the original North Carolina program was
+meant for only a few articles in a newsgroup each day.
+@cindex Horton, Mark
+@cindex Glickman, Matt
+
+Today, Usenet connects tens of thousands of sites around the world,
+from mainframes to Amigas.  With more than 3,000 newsgroups and untold
+thousands of readers, it is perhaps the world's largest computer
+network.
+
+
+@c --------
+@node When things go wrong III
+@section When things go wrong:
+@itemize @bullet
+@item
+When you start up rn, you get a ``warning'' that ``bogus
+newsgroups'' are present.
+
+Within a couple of minutes, you'll be asked
+whether to keep these or delete them.  Delete them.  Bogus newsgroups
+are newsgroups that your system administrator or somebody else has
+determined are no longer needed.
+
+@item
+While in a newsgroup in rn, you get a message: ``skipping
+unavailable article.''  This is usually an article that somebody posted
+and then decided to cancel.
+
+@item
+You upload a text file to your Unix host system for use in a 
+Usenet message or e-mail, and when you or your recipient reads the file, 
+every line ends with a @samp{^M}.
+
+This happens because Unix handles line endings differently than MS-
+DOS or Macintosh computers.  Most Unix systems have programs to convert 
+incoming files from other computers. To use it, upload your file and 
+then, at your command line, type
+
+@example
+dos2unix filename filename
+@end example
+
+or
+
+@example
+mac2unix filename filename
+@end example
+@findex dos2unix
+@findex mac2unix
+
+depending on which kind of computer you are using and where filename is 
+the name of the file you've just uploaded.  A similar program can prepare 
+text files for downloading to your computer, for example:
+
+@example
+unix2dos filename filename
+@end example
+
+or
+
+@example
+unix2mac filename filename
+@end example
+@findex unix2dos
+@findex unix2mac
+
+will ensure that a text file you are about to get will not come out 
+looking odd on your computer.
+@end itemize
+
+
+@c --------
+@node Usenet FYI
+@unnumberedsec FYI:
+
+@b{Leanne Phillips} periodically posts a list of frequently asked
+questions (and answers) about use of the rn killfile function in the
+@news{news.newusers.questions} and
+@news{news.answers} newsgroups on Usenet.
+@b{Bill Wohler} posts a guide to using the nn newsreader in the
+@news{news.answers} and
+@news{news.software} newsgroups.
+Look in the @news{news.announce.newusers}
+and @news{news.groups} newsgroups on Usenet for
+@fyi{A Guide to Social Newsgroups and Mailing Lists}, which gives brief
+summaries of the various @news{soc.*} newsgroups.
+@cindex Phillips, Leanne
+@cindex Wohler, Bill
+
+@fyi{Managing UUCP and Usenet} by @b{Tim O'Reilly} and @b{Grace Todino}
+(O'Reilly & Associates, 1992) is a good guide for setting up your own
+Usenet system.
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{``Somehow, that News fails to disquiet me.''}
+--- @b{Cyrano de Bergerac}
+
+@emph{``Welcome, to the watering hole, to the death of objectivity, and
+the killing fields of the wide boys, where are we now...''}
+--- @b{Marillion}, @fyi{The Thieving Magpie (La Gazza Ladra)}
+Used in concerts as spoken intro by @b{Fish}
+to the 2nd part of @fyi{Misplaced Childhood}
+@end flushright

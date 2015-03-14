@@ -1,0 +1,35 @@
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#
+# NOTE: Don't use this for anything else than compiling
+#       the ``ALICE'S ADVENTURES IN WONDERLAND''
+#
+# These are the bad guys:
+#	
+#	@email{foo}	::= <TT>&lt;foo&gt;</TT>
+#	@explain{foo}	::= <B>foo</B>
+#	@fyi{foo}	::= <I>foo</I>
+#	@host{foo}	::= <TT>foo</TT>
+#	@news{foo}	::= <B>foo</B>
+#	@"a		::= &auml;
+#	@"o		::= &ouml;
+#	@"u		::= &uuml;
+#	@ss		::= &szlig;
+#
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+$THISPROG .= 'j';
+
+$style_map{'email'} = '&do_email';
+$style_map{'explain'} = 'B';
+$style_map{'fyi'} = 'I';
+$style_map{'host'} = 'B';
+$style_map{'news'} = 'TT';
+
+$simple_map{'"a'} = '&auml;';
+$simple_map{'"o'} = '&ouml;';
+$simple_map{'"u'} = '&uuml;';
+$simple_map{'ss'} = '&szlig;';
+
+sub do_email { "<TT>&lt;$_[0]&gt;</TT>" }
+
+1; # required by require

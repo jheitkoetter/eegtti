@@ -1,0 +1,237 @@
+@c
+@c Subject: A Perspective on NREN
+@c     Copyright (c) 1993 by Greg Chartrand. All rights reserved.
+@c  
+@c     $Id: nren.texi,v 2.3 1994/08/14 13:25:05 joke Rel $
+@c
+
+@c --------
+By @emph{Greg Chartrand}
+@footnote{@i{Copyright @copyright{} 1993 by Greg Chartrand.
+All rights reserved.}}
+@email{Greg_Chartrand@@qmail.ssc.gov}
+@sp 1
+
+@center @b{National Science Foundation Develops a National Super Highway}
+@center @var{Greg Chartrand}
+@center 3/11/93
+@quotation
+``I just returned from a network meeting in San Diego today and thought you
+would be interested in my interpretation of what NSF proposes for the National
+Education and Research Network (NREN). Rather than comment specifically, I
+decided it would be interesting to write a @emph{parody} which relates the NREN to
+the construction of a national super highway. Doing so removes the highly
+technical aspects of the overall planned functions the NREN.
+Please excuse this style, but I think its the only way to explain my
+understanding of their plan in a way that does not immediately get very
+technical. It may be flawed, but the information is based upon
+Hans-Werner Braun's presentation.... as I understood it.''
+@end quotation
+@cindex NREN
+@cindex NSF
+@cindex National Science Foundation
+@sp 1
+
+The National Science Foundation is in the process of developing plans to
+build a national super highway that will advance transportation technology in
+our country. The super highway proposed will replace the existing interstate
+highway system and allow speeds of at least 240 MPH. the following interview
+with NSF developers explores their current plans.
+
+@center *
+
+ME: I understand you are building a new Super national
+highway@footnote{NSFnet backbone project} to serve the
+purposes of advancing ground transportation throughout our county.
+@cindex NSFnet
+
+NSF: Yes we are, as a part of an earlier initiative sponsored by the then
+Senator Gore. We are very excited about the technology that will allow
+transportation speeds of
+240 MPH@footnote{155 megabit/s} across the country.
+  
+ME: That sounds exciting, how will it be built?
+
+NSF: Well, we will have this super highway designed to allow the high speed
+travel@footnote{high speed data transfer}
+and it will have six entrance/exit
+ramps.@footnote{Network Access Points (NAP's)}
+@cindex NAP, Network Access Point
+ 
+ME: Ahh.... that doesn't sound like very many ramps, where will they be
+located?
+
+NSF: Well, several years ago we funded the establishment of six gourmet
+restaurants@footnote{NSF sponsored super computer centers}
+scattered across the country, we are going to fund the building
+of the super highway and access ramps at the restaurant locations. We are
+however allowing the ramp
+contractor@footnote{The contractor providing the NAP's.}
+to build as many ramps as he wishes, at his own expense.
+
+ME: I assume then the contractor for the
+highway@footnote{The contractor to provide the backbone telecommunications services}
+builds ramps where ever it makes sense to optimize access.
+
+NSF: Well, not exactly. We are separating the contracts for the ramps and the
+highway so the bidders can be very competitive.
+
+ME: I see. How to you plan to connect the rest of the interstate highway
+system@footnote{The Existing internet, regional, state, and other networks}
+to your super national highway?
+
+NSF: Well actually, its not part of our plan. We are having the highway and
+access ramps built for us, its up to the states or other government agencies
+to provide the highways to the access ramps. We will however fund a few temporary
+roads@footnote{NSF plans to provide interim funding for NSF regionals to connect to the
+NAP's. State networks and other government agencies are on their own.}
+to connect parts of the existing interstate highway system, but don't
+intend to make them permanent. Did I forget to mention that we will be
+shutting down the existing interstate highway
+system?@footnote{The existing NSFnet will be turned off at some point after the new
+``arrangement'' is in place.}
+
+ME: You mean I will no longer be able to drive across the existing interstate
+highway system?
+
+NSF: Yes, it will be destroyed.
+
+ME: OK, lets see If I understand. I have a state highway system for example,
+and I put in a connecting highway to your super highway, and I can now travel
+on it, right?
+
+NSF: Well, no you can't. The super highway will only be used for vehicles that
+can run
+240 MPH@footnote{The Very High Speed Backbone Service (VBNS) is reserved for applications
+and purposes where a demonstrated need for high speed/capacity transmission is
+needed.}
+@cindex VBNS, Very High Speed Backbone Service
+and we must approve every vehicle, destination, and trip
+the vehicle
+takes.@footnote{NSF will require approval.}
+We don't want our super highway clogged with vehicles which can only travel
+70 MPH!@footnote{NSF does not wish to clog the VBNS with low speed aggregate traffic unless
+additions are made to the network. 70 MPH = 45 MBS.}
+
+ME: I'm confused. You mean you want my state for example, to build an access
+road to a super highway it can't generally use?
+
+NSF: Well, yes and no. You see we also want to encourage development of toll
+roads in our
+country.@footnote{The NSF expects commercial providers like AT&T, MCI to put networking
+between NAP's. Most of the existing NSFnet traffic would go over these
+commercial networks which would have to be paid for by the users.}
+Our six high speed access ramps are wide enough to
+allow parallel toll roads to be accessed as well as our super highway. Private
+road builders will be able to put in toll roads between our access ramps, for
+a fee.
+
+ME: So there will no longer be a ``free'' interstate highway system?
+
+NSF: Right!
+
+ME: Lets see if I got this straight. You build a national super highway that
+has six access ramps located where you once established gourmet restaurants
+and you destroy the interstate highway system. There are no plans to replicate the
+functionality of the interstate highway systems, but you will allow private
+toll road builders to use your wide access ramps and develop parallel toll
+roads to your super highway. My state or the government has to build the roads
+that lead to the super highway, but once there, cannot travel on it unless the
+specific vehicle can run at 240 MPH and has specific permission from you to
+travel on it.
+
+NSF: You've got it!
+
+ME: Well then you must have a very interesting reason to put this highway and
+the access ramps at these restaurant locations.
+
+NSF: Well, you see, the gourmet food business isn't what it used to be. Fast
+food has really taken over in our country, we really need to preserve the
+gourmet food
+business.@footnote{The usefulness of super computer systems has been grossly reduced by the
+technological advances associated with very powerful Unix work stations. Super
+computers fill a diminishing niche in science and industry.}
+High quality restaurants should be located right
+off of classy high speed highways. We really would like to encourage restaurant
+patrons to use the super highway so they can have breakfast in San Diego and
+dinner in Champaign Illinois. We will be looking for patrons who can afford to
+eat at multiple restaurants and we will let them ride the highway for free! Of
+course they must have a vehicle that can go
+240 MPH.@footnote{NSF is looking for potential users that can use more than one super
+computer center and use the VBNS to make the application work. Applications of
+this nature are a bit obscure.}
+
+ME: I'm even more confused. How will I get across the country?
+
+NSF: Well, if your state puts in an access road to one of our access ramps you
+take it, and then exit-off on to one of the toll roads that will be built
+parallel to our super highway.
+
+ME: How fast will I be able to
+go?@footnote{There are no specifications for commercial providers.}
+
+NSF: What ever the speed limit is on the toll road.
+
+ME: What will it cost me to ride on it?
+
+NSF: What ever the toll is. You see, we expect that several toll roads will be
+developed. Competition! It should keep the price down.
+
+ME: When the super highway is empty, how will it be used?
+
+NSF: Well, we are telling the gourmet restaurants that they should work
+together even though they will be competing with each other for
+customers.@footnote{NSF super computer centers are no longer funded by NSF so they compete for
+commercial and non-commercial business.}
+You know, they could develop plans to send trash to each other so they can
+demonstrate how fast the transportation is on the super highway, it would be
+in their best interest.@footnote{NSF is asking the NSF super computer centers to develop demonstration
+applications which show how the network might be used. These applications
+would demonstrate, and not necessarly do anything useful.}
+
+ME: Aren't there plans for development of high speed toll roads already in
+progress by several toll road builders? What makes you think they will put
+their roads in-between your access
+ramps?@footnote{The major telecommunications suppliers will be selling similar services
+this year without the complications of the NAP's. The NAP's primary function
+would allow communications between commercial vendors which would be very
+useful, but it is unclear if the telecommunications suppliers will ``buy''  into
+this concept.}
+
+NSF: F.O.D.
+
+ME: What?
+
+NSF: Field Of Dreams. If we build it they will come.
+
+ME: So again, tell me who pays for what?
+
+NSF: The government funds the super highway and six access ramps. The toll
+road providers build their own roads and pays an access fee for the ramps. The
+states and other government agencies pay for any roads necessary to get to the
+access ramps. When you get on a toll road and pay what ever the price is.
+
+ME: And the only one's allowed to ride on the super highway are those persons
+who have special vehicles that can go 240 MPH with your specific permission,
+or those who can afford to frequent the gourmet restaurants and travel at 240
+MPH. Everyone else takes the toll roads.
+
+NSF: Right, but don't forget the trash runs between restaurants!
+
+ME: Oh, how silly of me! Hmmmm. I wonder if this is really what Senator Gore
+had in mind?
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{``If we do not succeed, then we face the risk of failure.''}
+--- @b{Vice President Dan Quayle}
+
+@emph{``What a terrible thing to have lost one's mind.
+Or not to have a mind at all. How true that is.''}
+--- @b{Vice President Dan Quayle}
+(winning friends while speaking to the United Negro College Fund)
+@end flushright

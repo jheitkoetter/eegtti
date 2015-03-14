@@ -1,0 +1,236 @@
+@c
+@c  EFF's Guide to the Internet by Adam Gaffin
+@c
+@c    ASCII: Copyright (c) 1993, 1994 by The Electronic Frontier Foundation
+@c  Texinfo: Copyright (c) 1993, 1994 by Joerg Heitkoetter
+@c
+@c     $Id: chap5.texi,v 2.3 1994/08/14 13:24:53 joke Rel $
+@c
+
+@c --------
+@c Up node is: Mailing Lists
+
+@menu
+* Internet Mailing Lists::
+* Bitnet Lists::
+@end menu
+
+@c --------
+@node Internet Mailing Lists
+@section Internet Mailing Lists
+
+Usenet is not the only forum on the Net.  Scores of ``mailing
+lists''  represent another way to interact with other Net users.
+Unlike Usenet messages,  which are stored in one central location on
+your host system's computer, mailing-list messages are delivered right
+to your e-mail box, unlike Usenet messages.
+@cindex Mailing list
+@cindex Bitnet
+
+You have to ask for permission to join a mailing list.  Unlike
+Usenet, where your message is distributed to the world, on a mailing
+list, you send your messages to a central moderator, who either re-mails
+it to the other people on the list or uses it to compile a periodic
+``digest'' mailed to subscribers.
+@cindex Digest
+@cindex Mailing list, Moderator
+
+Given the number of newsgroups, why would anybody bother with a
+mailing list?
+
+Even on Usenet, there are some topics that just might not generate
+enough interest for a newsgroup; for example, the @i{Queen} list, which is
+all about the late @var{Freddie Mercury}'s band; or the @i{Marillion & Fish}
+list called ``Freaks.''
+@cindex Queen
+@cindex Marillion
+@cindex Fish
+@cindex Dick, Derek W.
+@cindex Mercury, Freddie
+
+And because a moderator decides who can participate, a mailing list
+can offer a degree of freedom to speak one's mind (or not worry about
+@b{net.weenies}) that is not necessarily possible on Usenet.  Several
+groups offer anonymous postings -- only the moderator knows the real
+names of people who contribute. Examples include 12Step, where people
+enrolled in such programs as Alcoholics Anonymous can discuss their
+experiences, and sappho, a list limited to gay and bisexual women.
+
+You can find mailing addresses and descriptions of these lists
+in the @news{news.announce.newusers} newsgroup with the subject of ``Publicly
+Accessible Mailing Lists.''  Mailing lists now number in the hundreds,
+so this posting is divided into three parts.
+
+If you find a list to which you want to subscribe, send an e-mail
+message to
+
+@example
+list-request@@address
+@end example
+
+where ``list'' is the name of the mailing list and ``address'' is the
+moderator's e-mail address, asking to be added to the list.  Include
+your full e-mail address just in case something happens to your
+message's header along the way, and ask, if you're accepted, for the
+address to mail messages to the list.
+
+
+@c --------
+@node Bitnet Lists
+@section Bitnet Lists
+
+As if Usenet and mailing lists were not enough, there are
+Bitnet ``discussion groups'' or ``lists.''
+
+Bitnet is an international network linking colleges and
+universities, but it uses a different set of technical protocols for
+distributing information than the Internet or Usenet.
+It offers hundreds of discussion groups, comparable in scope to
+Usenet newsgroups.
+
+One of the major differences is the way messages are
+distributed.  Bitnet messages are sent to your mailbox, just as with a
+mailing list. However, where mailing lists are often maintained by a
+person, all Bitnet discussion groups are automated -- you subscribe to
+them through messages to a ``listserver'' computer.  This is a kind of
+robot moderator that controls distribution of messages on the list.  In
+many cases, it also maintains indexes and archives of past postings in a
+given discussion group, which can be handy if you want to get up to
+speed with a discussion or just search for some information related to
+it.
+@cindex Listserver
+
+Many Bitnet discussion groups are now ``translated'' into Usenet
+form and carried through Usenet in the @news{bit.listserv.*} hierarchy.  In
+general, it's probably better to read messages through Usenet if you
+can.  It saves some storage space on your host system's hard drives.
+
+If 50 people subscribe to the same Bitnet list, that means 50
+copies of each message get stored on the system; whereas if 50 people
+read a Usenet message, that's still only one message that needs storage
+on the system.  It can also save your sanity if the discussion group
+generates large numbers of messages.  Think of opening your e-mailbox
+one day to find 200 messages in it -- 199 of them from a discussion
+group and one of them a ``real'' e-mail message that's important to you.
+
+Subscribing and canceling subscriptions is done through an e-mail
+message to the listserver computer.  For addressing, all
+listservers are known as ``listserv'' (yep) at some Bitnet address.
+This means you will have to add @samp{.bitnet} to the end of the
+address, if it's in a form like this: @samp{listserv@@miamiu}. For example, if
+you have an interest in environmental issues, you might want to
+subscribe to the Econet discussion group.  To subscribe, send an e-mail
+message to
+
+@example
+listserv@@miamiu.bitnet
+@end example
+
+Some Bitnet listservers are also connected to the Internet, so if you
+see a listserver address ending in @samp{.edu}, you can e-mail the
+listserver without adding @samp{.bitnet} to the end.
+
+Always leave the ``Subject:'' line blank in a message to a
+listserver.  Inside the message, you tell the listserver what you
+want, with a series of simple commands:
+
+@table @code
+@item subscribe group @emph{Your Name}
+To subscribe to a list, where @b{group}
+is the list name and @emph{Your Name} is
+your full name, for example:
+@samp{subscribe econet Henry Fielding}
+@cindex Mailing list, subscribe
+
+@item unsubscribe group @emph{Your Name}
+To discontinue a group, for example:
+@samp{unsubscribe econet Henry Fielding}
+@cindex Mailing list, unsubscribe
+
+@item list global
+This sends you a list of all available
+Bitnet discussion groups.  But be careful -- the list is VERY long!
+
+@item get refcard
+Sends you a list of other commands you
+can use with a listserver, such as
+commands for retrieving past postings
+from a discussion group.
+@end table
+
+Each of these commands goes on a separate line in your message
+(and you can use one or all of them).  If you want to get a list of
+all Bitnet discussion groups, send e-mail to
+
+@example
+listserv@@bitnic.educom.edu
+@end example
+
+Leave the ``Subject:'' line blank and use the list global command.
+
+When you subscribe to a Bitnet group, there are two important
+differences from Usenet.
+
+First, when you want to post a message for others to read in the
+discussion group, you send a message to the group name at its Bitnet
+address.  Using Econet as an example, you would mail the message to:
+
+@example
+econet@@miamiu.bitnet
+@end example
+
+Note that this is different from the listserv address you used to
+subscribe to the group to begin with.  Use the listserv address ONLY
+to subscribe to or unsubscribe from a discussion group.  If you use the
+discussion-group address to try to subscribe or unsubscribe, your message 
+will go out to every other subscriber, many of whom will think unkind 
+thoughts, which they may share with you in an e-mail message). 
+
+The second difference relates to sending an e-mail message to the
+author of a particular posting.  Usenet newsreaders such as rn and nn
+let you do this with one key.  But if you hit your @samp{R} key to respond to
+a discussion-group message, your message will go to the listserver,
+and from there to everybody else on the list!  This can prove
+embarrassing to you and annoying to others. To make sure your
+message goes just to the person who wrote the posting, take down his
+e-mail address from the posting and then compose a brand-new message.
+Remember, also, that if you see an e-mail address like
+@email{IZZY@@INDYVMS}, it's 
+a Bitnet address. 
+
+Two Bitnet lists will prove helpful for delving further into the
+network.  NEW-LIST tells you the names of new discussion groups. To
+subscribe, send a message to @email{listserv@@ndsuvm1.bitnet}:
+
+@example
+sub NEW-LIST Your Name
+@end example
+
+INFONETS is the place to go when you have questions about Bitnet.
+It is also  first rate for help on questions about all major computer
+networks and how to reach them.  To subscribe, send e-mail to
+@email{info-nets-request@@think.com}:
+
+@example
+sub INFONETS Your Name
+@end example
+
+Both of these lists are also available on Usenet, the former as
+@news{bit.listserv.new-list}; the latter as @news{bit.listserv.infonets}
+(sometimes @news{bit.listserv.info-nets}).
+
+
+@c --------
+@iftex
+@vskip 0pt plus 1filll
+@end iftex
+@flushright
+@emph{``It wasn't long before the invention of the mailing-list, an
+ARPANET broadcasting technique in which an identical message could
+be sent automatically to large number of network subscribers.
+Interestingly, one of the first really big mailing-list was "SF-LOVERS",
+for Science Fiction fans. Disscussing science fiction on the network
+was not work-related and was frowned upon by many ARPANET computer
+administrators, but this didn't stop it from happening.''}
+--- @b{Bruce Sterling}, F&SF Science Column #5 @fyi{Internet}
+@end flushright
